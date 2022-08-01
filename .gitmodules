@@ -1,3 +1,7 @@
 [submodule "themes/maupassant"]
 	path = themes/maupassant
 	url = https://github.com/flysnow-org/maupassant-hugo
+
+[submodule "public"]
+	path = public
+	url = git@github.com:Mammoth777/Mammoth777.github.io.git
