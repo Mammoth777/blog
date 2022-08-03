@@ -14,3 +14,17 @@ localSearch = true
   repo = "Mammoth777/blog-discuss"    # 存储评论的Repo，格式为 owner/repo
   issueTerm = "pathname"  #表示你选择以那种方式让github issue的评论和你的文章关联。
   theme = "github-light" # 样式主题，有github-light和github-dark两种
+
+[menu]
+
+  [[menu.main]]
+    identifier = "general"
+    name = "通用技能"
+    url = "/general/"
+    weight = 2
+
+  [[menu.main]]
+    identifier = "about"
+    name = "关于"
+    url = "/about/"
+    weight = 3
