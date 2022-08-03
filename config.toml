@@ -21,13 +21,13 @@ localSearch = true
   [[menu.main]]
     identifier = "general"
     name = "通用技能"
-    url = "/general/"
+    url = "/posts/general/"
     weight = 2
 
   [[menu.main]]
     identifier = "bb"
     name = "随笔"
-    url = "/bb/"
+    url = "/posts/bb/"
     weight = 2
 
   [[menu.main]]
