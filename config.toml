@@ -1,7 +1,8 @@
 baseURL = 'https://mammoth777.github.io/blog-show/'
 languageCode = 'en-us'
 title = 'Hey Yo'
-theme = "Maupassant-jq"
+theme = "Maupassant-hugo"
+
 
 [author]
 name = '佳琦+7'
