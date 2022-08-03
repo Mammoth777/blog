@@ -24,6 +24,12 @@ localSearch = true
     weight = 2
 
   [[menu.main]]
+    identifier = "bb"
+    name = "随笔"
+    url = "/bb/"
+    weight = 2
+
+  [[menu.main]]
     identifier = "about"
     name = "关于"
     url = "/about/"
