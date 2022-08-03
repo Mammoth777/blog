@@ -1,4 +1,4 @@
-baseURL = 'https://mammoth777.github.io/'
+baseURL = 'https://mammoth777.github.io/blog-show/'
 languageCode = 'en-us'
 title = 'Hey Yo'
 theme = "maupassant"
