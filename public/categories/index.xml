@@ -1,10 +1,29 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on Hey Jiaqi</title>
-    <link>https://mammoth777.github.io/categories/</link>
-    <description>Recent content in Categories on Hey Jiaqi</description>
+    <title>Categories on Hey Yo</title>
+    <link>https://mammoth777.github.io/blog-show/categories/</link>
+    <description>Recent content in Categories on Hey Yo</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://mammoth777.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>Tue, 02 Aug 2022 13:30:26 +0800</lastBuildDate><atom:link href="https://mammoth777.github.io/blog-show/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>docker</title>
+      <link>https://mammoth777.github.io/blog-show/categories/docker/</link>
+      <pubDate>Tue, 02 Aug 2022 13:30:26 +0800</pubDate>
+      
+      <guid>https://mammoth777.github.io/blog-show/categories/docker/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>server</title>
+      <link>https://mammoth777.github.io/blog-show/categories/server/</link>
+      <pubDate>Tue, 02 Aug 2022 13:30:26 +0800</pubDate>
+      
+      <guid>https://mammoth777.github.io/blog-show/categories/server/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

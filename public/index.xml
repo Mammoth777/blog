@@ -1,18 +1,56 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Hey Jiaqi</title>
-    <link>https://mammoth777.github.io/</link>
-    <description>Recent content on Hey Jiaqi</description>
+    <title>Hey Yo</title>
+    <link>https://mammoth777.github.io/blog-show/</link>
+    <description>Recent content on Hey Yo</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://mammoth777.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>Wed, 03 Aug 2022 23:06:30 +0800</lastBuildDate><atom:link href="https://mammoth777.github.io/blog-show/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title></title>
-      <link>https://mammoth777.github.io/</link>
-      <pubDate>Mon, 01 Aug 2022 18:56:47 +0800</pubDate>
+      <title>BB</title>
+      <link>https://mammoth777.github.io/blog-show/posts/bb/</link>
+      <pubDate>Wed, 03 Aug 2022 23:06:30 +0800</pubDate>
       
-      <guid>https://mammoth777.github.io/</guid>
-      <description>hello index hello index1</description>
+      <guid>https://mammoth777.github.io/blog-show/posts/bb/</guid>
+      <description>my first bb 我的第一篇随笔</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>https://mammoth777.github.io/blog-show/about/</link>
+      <pubDate>Wed, 03 Aug 2022 22:56:07 +0800</pubDate>
+      
+      <guid>https://mammoth777.github.io/blog-show/about/</guid>
+      <description>据村里的老人说， 是一个有趣的男孩子
+ </description>
+    </item>
+    
+    <item>
+      <title>General</title>
+      <link>https://mammoth777.github.io/blog-show/posts/general/</link>
+      <pubDate>Wed, 03 Aug 2022 22:55:03 +0800</pubDate>
+      
+      <guid>https://mammoth777.github.io/blog-show/posts/general/</guid>
+      <description>通用技能</description>
+    </item>
+    
+    <item>
+      <title>Search</title>
+      <link>https://mammoth777.github.io/blog-show/search/</link>
+      <pubDate>Tue, 02 Aug 2022 15:17:31 +0800</pubDate>
+      
+      <guid>https://mammoth777.github.io/blog-show/search/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Docker</title>
+      <link>https://mammoth777.github.io/blog-show/posts/server/docker/</link>
+      <pubDate>Tue, 02 Aug 2022 13:30:26 +0800</pubDate>
+      
+      <guid>https://mammoth777.github.io/blog-show/posts/server/docker/</guid>
+      <description>docker</description>
     </item>
     
   </channel>
