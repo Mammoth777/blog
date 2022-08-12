@@ -45,9 +45,10 @@ message HelloReply {
 3. 生成代码
 
 ```bash
-protoc -I=. --go_out=./grpc/service ./proto-files/helloworld.proto
+protoc -I=. --go_out=./grpc/service --go-grpc_out=./grpc/service ./grpc/service/hello/helloworld.proto
 ```
 
 说明：
-- `go_out`: 生成后的文件位置
+- `go_out`: 生成后的`*.pb.go`文件位置
+- `go-grpc_out`: 生成后的`*_grpc.pb.go`文件位置
 - `-I`: 即`-IPATH`或`--proto_path=PATH`， 指定搜索路径参数，表示我们在那个路径下搜索`.proto`文件
