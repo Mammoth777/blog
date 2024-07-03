@@ -1,4 +1,4 @@
-baseURL = 'https://mammoth777.github.io/blog-show/'
+baseURL = 'https://mammoth777.github.io/blog/'
 languageCode = 'en-us'
 title = 'Hoi !'
 theme = "maupassant-hugo"
@@ -28,6 +28,12 @@ localSearch = true
     identifier = "bb"
     name = "随笔"
     url = "/posts/bb/"
+    weight = 2
+
+  [[menu.main]]
+    identifier = "frontend"
+    name = "前端"
+    url = "/posts/frontend/"
     weight = 2
 
   [[menu.main]]
