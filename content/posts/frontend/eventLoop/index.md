@@ -1,7 +1,7 @@
 ---
 title: "浏览器事件循环-微任务和宏任务，调用栈，渲染队列：布局，绘制与合成"
 date: 2024-01-12T11:15:14+08:00
-categories: ["frontend"]
+categories: ["前端"]
 draft: false
 ---
 

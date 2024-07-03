@@ -19,10 +19,10 @@ localSearch = true
 [menu]
 
   [[menu.main]]
-    identifier = "general"
-    name = "通用技能"
+    identifier = "General"
+    name = "通用"
     url = "/posts/general/"
-    weight = 2
+    weight = 1
 
   [[menu.main]]
     identifier = "bb"
@@ -31,10 +31,10 @@ localSearch = true
     weight = 2
 
   [[menu.main]]
-    identifier = "frontend"
+    identifier = "前端"
     name = "前端"
     url = "/posts/frontend/"
-    weight = 2
+    weight = 3
 
   [[menu.main]]
     identifier = "about"

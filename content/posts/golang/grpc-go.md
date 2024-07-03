@@ -1,7 +1,7 @@
 ---
 title: "Go 使用 grpc"
 date: 2022-08-12T11:15:14+08:00
-categories: ["general"]
+categories: ["golang", "General"]
 draft: false
 ---
 

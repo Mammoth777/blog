@@ -1,27 +1,27 @@
 <!doctype html>
 <html lang="en-us">
-<head>
+<head><script src="/blog/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=blog/livereload" data-no-instant defer></script>
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
 
-    <title>frontend | Hoi !</title>
-    <meta property="og:title" content="frontend - Hoi !">
+    <title>Frontend | Hoi !</title>
+    <meta property="og:title" content="Frontend - Hoi !">
     <meta property="og:type" content="article">
         
         
     <meta name="Keywords" content="">
-    <meta name="description" content="frontend">
+    <meta name="description" content="Frontend">
         
     <meta name="author" content="佳琦&#43;7">
-    <meta property="og:url" content="/categories/frontend/">
-    <link rel="shortcut icon" href='/favicon.ico'  type="image/x-icon">
+    <meta property="og:url" content="http://localhost:1313/blog/categories/frontend/">
+    <link rel="shortcut icon" href='/blog/favicon.ico'  type="image/x-icon">
 
-    <link rel="stylesheet" href='/css/normalize.css'>
-    <link rel="stylesheet" href='/css/style.css'>
-    <link rel="alternate" type="application/rss+xml" href="/categories/frontend/index.xml" title="Hoi !" />
+    <link rel="stylesheet" href='/blog/css/normalize.css'>
+    <link rel="stylesheet" href='/blog/css/style.css'>
+    <link rel="alternate" type="application/rss+xml" href="http://localhost:1313/blog/categories/frontend/index.xml" title="Hoi !" />
     <script type="text/javascript" src="//cdn.bootcdn.net/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
     
@@ -38,7 +38,7 @@
         <div class="col-group">
             <div class="site-name ">
                 
-                    <a id="logo" href="">
+                    <a id="logo" href="http://localhost:1313/blog/">
                         Hoi !
                     </a>
                 
@@ -46,13 +46,15 @@
             </div>
             <div>
                 <nav id="nav-menu" class="clearfix">
-                    <a class="" href="">首页</a>
+                    <a class="" href="http://localhost:1313/blog/">首页</a>
                     
-                    <a  href="/posts/general/" title="通用技能">通用技能</a>
+                    <a  href="http://localhost:1313/blog/posts/frontend/" title="前端">前端</a>
                     
-                    <a  href="/posts/bb/" title="随笔">随笔</a>
+                    <a  href="http://localhost:1313/blog/posts/general/" title="通用技能">通用技能</a>
                     
-                    <a  href="/about/" title="关于">关于</a>
+                    <a  href="http://localhost:1313/blog/posts/bb/" title="随笔">随笔</a>
+                    
+                    <a  href="http://localhost:1313/blog/about/" title="关于">关于</a>
                     
                 </nav>
             </div>
@@ -79,7 +81,7 @@
     <article class="post">
         <header>
             <h1 class="post-title">
-                <a href="/posts/frontend/eventloop/">浏览器事件循环-微任务和宏任务，调用栈，渲染队列：布局，绘制与合成</a>
+                <a href="http://localhost:1313/blog/posts/frontend/eventloop/">浏览器事件循环-微任务和宏任务，调用栈，渲染队列：布局，绘制与合成</a>
             </h1>
         </header>
         <date class="post-meta meta-date">
@@ -89,15 +91,18 @@
         <div class="post-meta meta-category">
             |
             
-            <a href='/categories/frontend'>frontend</a>
+            <a href='/blog/categories/frontend'>frontend</a>
             
         </div>
         
         <div class="post-content">
-             翻译计划： 2024.1
-  此文翻译自： https://blog.xnim.me/event-loop-and-render-queue#heading-task-queue 已经获取作者授权
- 此文主旨在于关注事件队列， 执行顺序 以及开发者如何优化代码。 完整思路如下： ……
-            <p class="readmore"><a href="/posts/frontend/eventloop/">阅读全文</a></p>
+            翻译计划： 2024.1
+此文翻译自： https://blog.xnim.me/event-loop-and-render-queue#heading-task-queue 已经获取作者授权
+此文主旨在于关注事件队列， 执行顺序 以及开发者如何优化代码。 完整思路如下： 事件队列 古老的操作系统不支持多线程， 那时候的事件循环就类似这样一个简单的循环:
+while (true) { if (execQueue.isNotEmpty()) { execQueue.pop().exec(); } } 在老的操作系统上， 这段代码会疯狂跑满全部cpu。 （真的吗？ &ndash; 年轻的译者注） 现代操作系统调度器非常复杂， 包括优先级，执行队列， 和其他的技术。
+我们可以把事件循环理解为一个圆圈，系统就一圈一圈地检查， 有没有待执行的任务 （pending task）。 下面这些行为， 都会在事件循环里生成任务：
+script 标签 延迟任务： setTimeout, setInterval, requestIdleCallback 浏览器的事件处理API: click， mousedown, input, blur 等等。 有一些事件是用户初始化的，比如点击事件， tab切换这种 有的事件是来自于代码， 比如 ajax 的响应啥的 promise 状态变化； （关于promise， 可以看这个文章, emmm这篇文章是我准备留给2月份翻译的） DOMMutationObserver, IntersectionObserver 这种 Observer 家族的 RequestAnimationFrame Almost everything we described above is planned through WebAPI (or browserAPI).……
+            <p class="readmore"><a href="http://localhost:1313/blog/posts/frontend/eventloop/">阅读全文</a></p>
         </div>
     </article>
     
@@ -112,7 +117,7 @@
 
                     <footer id="footer">
     <div>
-        &copy; 2024 <a href="">Hoi ! By 佳琦&#43;7</a>
+        &copy; 2024 <a href="http://localhost:1313/blog/">Hoi ! By 佳琦&#43;7</a>
         
     </div>
     <br />
@@ -132,7 +137,7 @@
 
 
 <a id="rocket" href="#top"></a>
-<script type="text/javascript" src='/js/totop.js?v=0.0.0' async=""></script>
+<script type="text/javascript" src='/blog/js/totop.js?v=0.0.0' async=""></script>
 
 
 
@@ -140,10 +145,10 @@
 
                 <div id="secondary">
     <section class="widget">
-        <form id="search" action='search' method="get" accept-charset="utf-8" _lpchecked="1">
+        <form id="search" action='http://localhost:1313/blog/search' method="get" accept-charset="utf-8" _lpchecked="1">
       
       <input type="text" name="q" maxlength="20" placeholder="Search">
-      <input type="hidden" name="sitesearch" value="">
+      <input type="hidden" name="sitesearch" value="http://localhost:1313/blog/">
       <button type="submit" class="submit icon-search"></button>
 </form>
     </section>
@@ -153,27 +158,27 @@
 <ul class="widget-list">
     
     <li>
-        <a href="/posts/frontend/eventloop/" title="浏览器事件循环-微任务和宏任务，调用栈，渲染队列：布局，绘制与合成">浏览器事件循环-微任务和宏任务，调用栈，渲染队列：布局，绘制与合成</a>
+        <a href="http://localhost:1313/blog/posts/frontend/eventloop/" title="浏览器事件循环-微任务和宏任务，调用栈，渲染队列：布局，绘制与合成">浏览器事件循环-微任务和宏任务，调用栈，渲染队列：布局，绘制与合成</a>
     </li>
     
     <li>
-        <a href="/posts/bb/test/" title="Test">Test</a>
+        <a href="http://localhost:1313/blog/posts/bb/test/" title="Test">Test</a>
     </li>
     
     <li>
-        <a href="/posts/general/grpc-go/" title="Go 使用 grpc">Go 使用 grpc</a>
+        <a href="http://localhost:1313/blog/posts/general/grpc-go/" title="Go 使用 grpc">Go 使用 grpc</a>
     </li>
     
     <li>
-        <a href="/posts/bb/idx/" title="BB">BB</a>
+        <a href="http://localhost:1313/blog/posts/bb/idx/" title="BB">BB</a>
     </li>
     
     <li>
-        <a href="/posts/general/idx/" title="General">General</a>
+        <a href="http://localhost:1313/blog/posts/general/idx/" title="General">General</a>
     </li>
     
     <li>
-        <a href="/posts/server/docker/" title="Docker">Docker</a>
+        <a href="http://localhost:1313/blog/posts/server/docker/" title="Docker">Docker</a>
     </li>
     
 </ul>
@@ -182,22 +187,22 @@
     
 
     <section class="widget">
-        <h3 class="widget-title"><a href='/categories/'>分类</a></h3>
+        <h3 class="widget-title"><a href='/blog/categories/'>分类</a></h3>
 <ul class="widget-list">
     
-    <li><a href="/categories/docker/">docker (1)</a></li>
+    <li><a href="http://localhost:1313/blog/categories/docker/">Docker (1)</a></li>
     
-    <li><a href="/categories/frontend/">frontend (1)</a></li>
+    <li><a href="http://localhost:1313/blog/categories/frontend/">Frontend (1)</a></li>
     
-    <li><a href="/categories/general/">general (2)</a></li>
+    <li><a href="http://localhost:1313/blog/categories/general/">General (2)</a></li>
     
-    <li><a href="/categories/server/">server (1)</a></li>
+    <li><a href="http://localhost:1313/blog/categories/server/">Server (1)</a></li>
     
 </ul>
     </section>
 
     <section class="widget">
-        <h3 class="widget-title"><a href='/tags/'>标签</a></h3>
+        <h3 class="widget-title"><a href='/blog/tags/'>标签</a></h3>
 <div class="tagcloud">
     
 </div>
@@ -208,7 +213,7 @@
     <section class="widget">
         <h3 class="widget-title">其它</h3>
         <ul class="widget-list">
-            <li><a href="index.xml">文章 RSS</a></li>
+            <li><a href="http://localhost:1313/blog/index.xml">文章 RSS</a></li>
         </ul>
     </section>
 </div>

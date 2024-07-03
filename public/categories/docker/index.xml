@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>docker on Hoi !</title>
-    <link>/categories/docker/</link>
-    <description>Recent content in docker on Hoi !</description>
+    <title>Docker on Hoi !</title>
+    <link>http://localhost:1313/blog/categories/docker/</link>
+    <description>Recent content in Docker on Hoi !</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 02 Aug 2022 13:30:26 +0800</lastBuildDate><atom:link href="/categories/docker/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 02 Aug 2022 13:30:26 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/blog/categories/docker/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Docker</title>
-      <link>/posts/server/docker/</link>
+      <link>http://localhost:1313/blog/posts/server/docker/</link>
       <pubDate>Tue, 02 Aug 2022 13:30:26 +0800</pubDate>
-      
-      <guid>/posts/server/docker/</guid>
+      <guid>http://localhost:1313/blog/posts/server/docker/</guid>
       <description>docker</description>
     </item>
-    
   </channel>
 </rss>

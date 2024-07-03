@@ -2,46 +2,46 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Hoi !</title>
-    <link>/categories/</link>
+    <link>http://localhost:1313/blog/categories/</link>
     <description>Recent content in Categories on Hoi !</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 12 Jan 2024 11:15:14 +0800</lastBuildDate><atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 12 Jan 2024 11:15:14 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/blog/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>frontend</title>
-      <link>/categories/frontend/</link>
+      <title>前端</title>
+      <link>http://localhost:1313/blog/categories/%E5%89%8D%E7%AB%AF/</link>
       <pubDate>Fri, 12 Jan 2024 11:15:14 +0800</pubDate>
-      
-      <guid>/categories/frontend/</guid>
+      <guid>http://localhost:1313/blog/categories/%E5%89%8D%E7%AB%AF/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>general</title>
-      <link>/categories/general/</link>
+      <title>General</title>
+      <link>http://localhost:1313/blog/categories/general/</link>
       <pubDate>Fri, 12 Aug 2022 11:15:14 +0800</pubDate>
-      
-      <guid>/categories/general/</guid>
+      <guid>http://localhost:1313/blog/categories/general/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>docker</title>
-      <link>/categories/docker/</link>
-      <pubDate>Tue, 02 Aug 2022 13:30:26 +0800</pubDate>
-      
-      <guid>/categories/docker/</guid>
+      <title>Golang</title>
+      <link>http://localhost:1313/blog/categories/golang/</link>
+      <pubDate>Fri, 12 Aug 2022 11:15:14 +0800</pubDate>
+      <guid>http://localhost:1313/blog/categories/golang/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>server</title>
-      <link>/categories/server/</link>
+      <title>Docker</title>
+      <link>http://localhost:1313/blog/categories/docker/</link>
       <pubDate>Tue, 02 Aug 2022 13:30:26 +0800</pubDate>
-      
-      <guid>/categories/server/</guid>
+      <guid>http://localhost:1313/blog/categories/docker/</guid>
       <description></description>
     </item>
-    
+    <item>
+      <title>Server</title>
+      <link>http://localhost:1313/blog/categories/server/</link>
+      <pubDate>Tue, 02 Aug 2022 13:30:26 +0800</pubDate>
+      <guid>http://localhost:1313/blog/categories/server/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>
