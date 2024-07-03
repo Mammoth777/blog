@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>frontend on Hoi !</title>
+    <link>/categories/frontend/</link>
+    <description>Recent content in frontend on Hoi !</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 12 Jan 2024 11:15:14 +0800</lastBuildDate><atom:link href="/categories/frontend/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>浏览器事件循环-微任务和宏任务，调用栈，渲染队列：布局，绘制与合成</title>
+      <link>/posts/frontend/eventloop/</link>
+      <pubDate>Fri, 12 Jan 2024 11:15:14 +0800</pubDate>
+      
+      <guid>/posts/frontend/eventloop/</guid>
+      <description> 翻译计划： 2024.1
+  此文翻译自： https://blog.xnim.me/event-loop-and-render-queue#heading-task-queue 已经获取作者授权
+ 此文主旨在于关注事件队列， 执行顺序 以及开发者如何优化代码。 完整思路如下： </description>
+    </item>
+    
+  </channel>
+</rss>

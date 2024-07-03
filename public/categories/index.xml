@@ -1,27 +1,45 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on Hey Yo</title>
-    <link>https://mammoth777.github.io/blog-show/categories/</link>
-    <description>Recent content in Categories on Hey Yo</description>
+    <title>Categories on Hoi !</title>
+    <link>/categories/</link>
+    <description>Recent content in Categories on Hoi !</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 02 Aug 2022 13:30:26 +0800</lastBuildDate><atom:link href="https://mammoth777.github.io/blog-show/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 12 Jan 2024 11:15:14 +0800</lastBuildDate><atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>frontend</title>
+      <link>/categories/frontend/</link>
+      <pubDate>Fri, 12 Jan 2024 11:15:14 +0800</pubDate>
+      
+      <guid>/categories/frontend/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>general</title>
+      <link>/categories/general/</link>
+      <pubDate>Fri, 12 Aug 2022 11:15:14 +0800</pubDate>
+      
+      <guid>/categories/general/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>docker</title>
-      <link>https://mammoth777.github.io/blog-show/categories/docker/</link>
+      <link>/categories/docker/</link>
       <pubDate>Tue, 02 Aug 2022 13:30:26 +0800</pubDate>
       
-      <guid>https://mammoth777.github.io/blog-show/categories/docker/</guid>
+      <guid>/categories/docker/</guid>
       <description></description>
     </item>
     
     <item>
       <title>server</title>
-      <link>https://mammoth777.github.io/blog-show/categories/server/</link>
+      <link>/categories/server/</link>
       <pubDate>Tue, 02 Aug 2022 13:30:26 +0800</pubDate>
       
-      <guid>https://mammoth777.github.io/blog-show/categories/server/</guid>
+      <guid>/categories/server/</guid>
       <description></description>
     </item>
     

@@ -1,55 +1,86 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Hey Yo</title>
-    <link>https://mammoth777.github.io/blog-show/</link>
-    <description>Recent content on Hey Yo</description>
+    <title>Hoi !</title>
+    <link>/</link>
+    <description>Recent content on Hoi !</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 03 Aug 2022 23:06:30 +0800</lastBuildDate><atom:link href="https://mammoth777.github.io/blog-show/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 12 Jan 2024 11:15:14 +0800</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>浏览器事件循环-微任务和宏任务，调用栈，渲染队列：布局，绘制与合成</title>
+      <link>/posts/frontend/eventloop/</link>
+      <pubDate>Fri, 12 Jan 2024 11:15:14 +0800</pubDate>
+      
+      <guid>/posts/frontend/eventloop/</guid>
+      <description> 翻译计划： 2024.1
+  此文翻译自： https://blog.xnim.me/event-loop-and-render-queue#heading-task-queue 已经获取作者授权
+ 此文主旨在于关注事件队列， 执行顺序 以及开发者如何优化代码。 完整思路如下： </description>
+    </item>
+    
+    <item>
+      <title>Test</title>
+      <link>/posts/bb/test/</link>
+      <pubDate>Fri, 12 Aug 2022 11:33:22 +0800</pubDate>
+      
+      <guid>/posts/bb/test/</guid>
+      <description>ssss</description>
+    </item>
+    
+    <item>
+      <title>Go 使用 grpc</title>
+      <link>/posts/general/grpc-go/</link>
+      <pubDate>Fri, 12 Aug 2022 11:15:14 +0800</pubDate>
+      
+      <guid>/posts/general/grpc-go/</guid>
+      <description>快速开始  安装proto-gen-go-grpc插件  go install google.golang.org/grpc/cmd/protoc-gen-go-grpc@latest 来看看版本
+protoc-gen-go-grpc --version protoc-gen-go-grpc 1.1.0 编写proto文件  syntax = &amp;#34;proto3&amp;#34;;package hw;option go_package=&amp;#34;./hello&amp;#34;; // 告诉protoc生成的文件的包名 service Greeter { rpc SayHello (HelloRequest) returns (HelloReply) {}}message HelloRequest { string name = 1;}message HelloReply { string name = 1;}生成代码  protoc -I=. --go_out=./grpc/service --go-grpc_out=./grpc/service ./grpc/service/hello/helloworld.proto 说明：
+ go_out: 生成后的*.pb.go文件位置 go-grpc_out: 生成后的*_grpc.pb.go文件位置 -I: 即-IPATH或--proto_path=PATH， 指定搜索路径参数，表示我们在那个路径下搜索.proto文件  </description>
+    </item>
+    
     <item>
       <title>BB</title>
-      <link>https://mammoth777.github.io/blog-show/posts/bb/</link>
+      <link>/posts/bb/idx/</link>
       <pubDate>Wed, 03 Aug 2022 23:06:30 +0800</pubDate>
       
-      <guid>https://mammoth777.github.io/blog-show/posts/bb/</guid>
+      <guid>/posts/bb/idx/</guid>
       <description>my first bb 我的第一篇随笔</description>
     </item>
     
     <item>
       <title>About</title>
-      <link>https://mammoth777.github.io/blog-show/about/</link>
+      <link>/about/</link>
       <pubDate>Wed, 03 Aug 2022 22:56:07 +0800</pubDate>
       
-      <guid>https://mammoth777.github.io/blog-show/about/</guid>
+      <guid>/about/</guid>
       <description>据村里的老人说， 是一个有趣的男孩子
  </description>
     </item>
     
     <item>
       <title>General</title>
-      <link>https://mammoth777.github.io/blog-show/posts/general/</link>
+      <link>/posts/general/idx/</link>
       <pubDate>Wed, 03 Aug 2022 22:55:03 +0800</pubDate>
       
-      <guid>https://mammoth777.github.io/blog-show/posts/general/</guid>
+      <guid>/posts/general/idx/</guid>
       <description>通用技能</description>
     </item>
     
     <item>
       <title>Search</title>
-      <link>https://mammoth777.github.io/blog-show/search/</link>
+      <link>/search/</link>
       <pubDate>Tue, 02 Aug 2022 15:17:31 +0800</pubDate>
       
-      <guid>https://mammoth777.github.io/blog-show/search/</guid>
+      <guid>/search/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Docker</title>
-      <link>https://mammoth777.github.io/blog-show/posts/server/docker/</link>
+      <link>/posts/server/docker/</link>
       <pubDate>Tue, 02 Aug 2022 13:30:26 +0800</pubDate>
       
-      <guid>https://mammoth777.github.io/blog-show/posts/server/docker/</guid>
+      <guid>/posts/server/docker/</guid>
       <description>docker</description>
     </item>
     

@@ -7,20 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
 
-    <title>About | Hoi !</title>
-    <meta property="og:title" content="About - Hoi !">
+    <title>Go 使用 grpc | Hoi !</title>
+    <meta property="og:title" content="Go 使用 grpc - Hoi !">
     <meta property="og:type" content="article">
         
-    <meta property="article:published_time" content='2022-08-03T22:56:07&#43;08:00'>
+    <meta property="article:published_time" content='2022-08-12T11:15:14&#43;08:00'>
         
         
-    <meta property="article:modified_time" content='2022-08-03T22:56:07&#43;08:00'>
+    <meta property="article:modified_time" content='2022-08-12T11:15:14&#43;08:00'>
         
     <meta name="Keywords" content="">
-    <meta name="description" content="About">
+    <meta name="description" content="Go 使用 grpc">
         
     <meta name="author" content="佳琦&#43;7">
-    <meta property="og:url" content="/about/">
+    <meta property="og:url" content="/posts/general/grpc-go/">
     <link rel="shortcut icon" href='/favicon.ico'  type="image/x-icon">
 
     <link rel="stylesheet" href='/css/normalize.css'>
@@ -49,13 +49,13 @@
             </div>
             <div>
                 <nav id="nav-menu" class="clearfix">
-                    <a class="" href="">首页</a>
+                    <a class="current" href="">首页</a>
                     
                     <a  href="/posts/general/" title="通用技能">通用技能</a>
                     
                     <a  href="/posts/bb/" title="随笔">随笔</a>
                     
-                    <a class="current" href="/about/" title="关于">关于</a>
+                    <a  href="/about/" title="关于">关于</a>
                     
                 </nav>
             </div>
@@ -73,19 +73,61 @@
     
     <article class="post">
         <header>
-            <h1 class="post-title">About</h1>
+            <h1 class="post-title">Go 使用 grpc</h1>
         </header>
         <date class="post-meta meta-date">
-            2022年8月3日
+            2022年8月12日
         </date>
+        
+        <div class="post-meta">
+            <span>|</span>
+            
+            <span class="meta-category"><a href='/categories/general'>general</a></span>
+            
+        </div>
         
         
         
         <div class="post-content">
-            <p><strong>据村里的老人说， 是一个有趣的男孩子</strong></p>
-<p>
-        <img class="mx-auto" alt="img" src="./IMG_4002.JPG" />   
-    </p>
+            <h3 id="快速开始">快速开始</h3>
+<ol>
+<li>安装proto-gen-go-grpc插件</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">go install google.golang.org/grpc/cmd/protoc-gen-go-grpc@latest
+</code></pre></div><p>来看看版本</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">protoc-gen-go-grpc --version                                   
+protoc-gen-go-grpc 1.1.0
+</code></pre></div><ol start="2">
+<li>编写proto文件</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-proto" data-lang="proto">syntax <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;proto3&#34;</span>;<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#f92672">package</span> hw;<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">option</span> go_package<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;./hello&#34;</span>; <span style="color:#75715e">// 告诉protoc生成的文件的包名
+</span><span style="color:#75715e"></span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">service</span> Greeter {<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>  <span style="color:#66d9ef">rpc</span> SayHello (HelloRequest) <span style="color:#66d9ef">returns</span> (HelloReply) {}<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>}<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">message</span> <span style="color:#a6e22e">HelloRequest</span> {<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>  <span style="color:#66d9ef">string</span> name <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>;<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>}<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">message</span> <span style="color:#a6e22e">HelloReply</span> {<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>  <span style="color:#66d9ef">string</span> name <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>;<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>}<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010">
+</span></code></pre></div><ol start="3">
+<li>生成代码</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">protoc -I<span style="color:#f92672">=</span>. --go_out<span style="color:#f92672">=</span>./grpc/service --go-grpc_out<span style="color:#f92672">=</span>./grpc/service ./grpc/service/hello/helloworld.proto
+</code></pre></div><p>说明：</p>
+<ul>
+<li><code>go_out</code>: 生成后的<code>*.pb.go</code>文件位置</li>
+<li><code>go-grpc_out</code>: 生成后的<code>*_grpc.pb.go</code>文件位置</li>
+<li><code>-I</code>: 即<code>-IPATH</code>或<code>--proto_path=PATH</code>， 指定搜索路径参数，表示我们在那个路径下搜索<code>.proto</code>文件</li>
+</ul>
 
         </div>
 
