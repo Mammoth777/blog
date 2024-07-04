@@ -5,3 +5,6 @@
 [submodule "themes/maupassant-hugo"]
 	path = themes/maupassant-hugo
 	url = git@github.com:Mammoth777/maupassant-hugo.git
+[submodule "themes/hugo-theme-nix"]
+	path = themes/hugo-theme-nix
+	url = https://github.com/LordMathis/hugo-theme-nix
