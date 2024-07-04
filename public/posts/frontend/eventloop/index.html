@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en-us">
-<head><script src="/blog/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=blog/livereload" data-no-instant defer></script>
+<head>
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -20,7 +20,7 @@
     <meta name="description" content="浏览器事件循环-微任务和宏任务，调用栈，渲染队列：布局，绘制与合成">
         
     <meta name="author" content="佳琦&#43;7">
-    <meta property="og:url" content="http://localhost:1313/blog/posts/frontend/eventloop/">
+    <meta property="og:url" content="https://mammoth777.github.io/blog/posts/frontend/eventloop/">
     <link rel="shortcut icon" href='/blog/favicon.ico'  type="image/x-icon">
 
     <link rel="stylesheet" href='/blog/css/normalize.css'>
@@ -41,7 +41,7 @@
         <div class="col-group">
             <div class="site-name ">
                 
-                    <a id="logo" href="http://localhost:1313/blog/">
+                    <a id="logo" href="https://mammoth777.github.io/blog/">
                         Hoi !
                     </a>
                 
@@ -49,15 +49,11 @@
             </div>
             <div>
                 <nav id="nav-menu" class="clearfix">
-                    <a class="current" href="http://localhost:1313/blog/">首页</a>
+                    <a class="current" href="https://mammoth777.github.io/blog/">首页</a>
                     
-                    <a  href="http://localhost:1313/blog/posts/general/" title="通用">通用</a>
+                    <a  href="https://mammoth777.github.io/blog/posts/bb/" title="随笔">随笔</a>
                     
-                    <a  href="http://localhost:1313/blog/posts/bb/" title="随笔">随笔</a>
-                    
-                    <a  href="http://localhost:1313/blog/about/" title="关于">关于</a>
-                    
-                    <a  href="http://localhost:1313/blog/posts/frontend/" title="前端">前端</a>
+                    <a  href="https://mammoth777.github.io/blog/about/" title="关于">关于</a>
                     
                 </nav>
             </div>
@@ -104,12 +100,12 @@
     </p>
 <h2 id="事件队列">事件队列</h2>
 <p>古老的操作系统不支持多线程， 那时候的事件循环就类似这样一个简单的循环:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">while</span> (<span style="color:#66d9ef">true</span>) {
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">execQueue</span>.<span style="color:#a6e22e">isNotEmpty</span>()) {
-</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">execQueue</span>.<span style="color:#a6e22e">pop</span>().<span style="color:#a6e22e">exec</span>();
-</span></span><span style="display:flex;"><span>    }
-</span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><p>在老的操作系统上， 这段代码会疯狂跑满全部cpu。 （真的吗？ &ndash; 年轻的译者注）
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">while</span> (<span style="color:#66d9ef">true</span>) {
+    <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">execQueue</span>.<span style="color:#a6e22e">isNotEmpty</span>()) {
+        <span style="color:#a6e22e">execQueue</span>.<span style="color:#a6e22e">pop</span>().<span style="color:#a6e22e">exec</span>();
+    }
+}
+</code></pre></div><p>在老的操作系统上， 这段代码会疯狂跑满全部cpu。 （真的吗？ &ndash; 年轻的译者注）
 现代操作系统调度器非常复杂， 包括优先级，执行队列， 和其他的技术。</p>
 <p>我们可以把事件循环理解为一个圆圈，系统就一圈一圈地检查， 有没有待执行的任务 （pending task）。
 
@@ -173,22 +169,23 @@
 <li>Safari 在 帧渲染之后调用 RAF。 它是唯一一个跟大家不一样的。 <a href="https://github.com/whatwg/html/issues/2569#issuecomment-332150901">https://github.com/whatwg/html/issues/2569#issuecomment-332150901</a></li>
 </ol>
 <p>那么， 如何检查浏览器渲染帧率？看下下面的代码</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">checkRequestAnimationDiff</span> <span style="color:#f92672">=</span> () =&gt; {
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">prev</span>;
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">call</span>() {
-</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">requestAnimationFrame</span>((<span style="color:#a6e22e">timestamp</span>) =&gt; {
-</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">prev</span>) {
-</span></span><span style="display:flex;"><span>                <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">timestamp</span> <span style="color:#f92672">-</span> <span style="color:#a6e22e">prev</span>); 
-</span></span><span style="display:flex;"><span>	            <span style="color:#75715e">// 60FPS的时候这里应该是 16.6ms左右
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>            }
-</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">prev</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">timestamp</span>;
-</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">call</span>();
-</span></span><span style="display:flex;"><span>        });
-</span></span><span style="display:flex;"><span>    }
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">call</span>();
-</span></span><span style="display:flex;"><span>}
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">checkRequestAnimationDiff</span>();
-</span></span></code></pre></div><p>这里是执行结果</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">checkRequestAnimationDiff</span> <span style="color:#f92672">=</span> () =&gt; {
+    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">prev</span>;
+    <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">call</span>() {
+        <span style="color:#a6e22e">requestAnimationFrame</span>((<span style="color:#a6e22e">timestamp</span>) =&gt; {
+            <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">prev</span>) {
+                <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">timestamp</span> <span style="color:#f92672">-</span> <span style="color:#a6e22e">prev</span>); 
+	            <span style="color:#75715e">// 60FPS的时候这里应该是 16.6ms左右
+</span><span style="color:#75715e"></span>            }
+            <span style="color:#a6e22e">prev</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">timestamp</span>;
+            <span style="color:#a6e22e">call</span>();
+        });
+    }
+    <span style="color:#a6e22e">call</span>();
+}
+<span style="color:#a6e22e">checkRequestAnimationDiff</span>();
+
+</code></pre></div><p>这里是执行结果</p>
 <p>
         <img class="mx-auto" alt="20240130110113.png" src="pics/20240130110113.png" />   
     </p>
@@ -225,26 +222,26 @@
 <p>✍️ Layout 在元素改变大小或读取元素属性的时候执行。 这个过程叫 强制布局 (<code>force layout</code>).  下方链接列出了会出发强制布局的属性： <a href="https://gist.github.com/paulirish/5d52fb081b3570c81e3a">https://gist.github.com/paulirish/5d52fb081b3570c81e3a</a>.</p>
 <p>✍️ 当强制布局触发的时候，浏览器会暂停 JS 主线程。调用栈里有东西也不行，硬停。</p>
 <p>比如下面的例子</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">div1</span>.<span style="color:#a6e22e">style</span>.<span style="color:#a6e22e">height</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;200px&#34;</span>; <span style="color:#75715e">// Change element size
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">height1</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">div1</span>.<span style="color:#a6e22e">clientHeight</span>; <span style="color:#75715e">// Read property
-</span></span></span></code></pre></div><p>浏览器需要先计算 <code>div1</code> 尺寸， 才能得到 <code>clientHeight</code> . 所以浏览器暂停了 JS 执行: <code>Style</code> 步骤检查改变的部分， <code>Layout</code> 重新计算尺寸。 <code>Layout</code> 不仅是计算 <code>div1</code>前面的元素， 后面的也要算。 现代浏览器会优化到不会每次都计算全部<code>dom</code>, 但是也没准儿，最糟的情况就会全算。 这个计算的过程叫 <code>Layout Shift</code> . 我们可以在下图中看到更改或移动的元素：
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#a6e22e">div1</span>.<span style="color:#a6e22e">style</span>.<span style="color:#a6e22e">height</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;200px&#34;</span>; <span style="color:#75715e">// Change element size
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">height1</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">div1</span>.<span style="color:#a6e22e">clientHeight</span>; <span style="color:#75715e">// Read property
+</span></code></pre></div><p>浏览器需要先计算 <code>div1</code> 尺寸， 才能得到 <code>clientHeight</code> . 所以浏览器暂停了 JS 执行: <code>Style</code> 步骤检查改变的部分， <code>Layout</code> 重新计算尺寸。 <code>Layout</code> 不仅是计算 <code>div1</code>前面的元素， 后面的也要算。 现代浏览器会优化到不会每次都计算全部<code>dom</code>, 但是也没准儿，最糟的情况就会全算。 这个计算的过程叫 <code>Layout Shift</code> . 我们可以在下图中看到更改或移动的元素：
 
         <img class="mx-auto" alt="20240207160430.png" src="pics/20240207160430.png" />   
     </p>
 <p>浏览器会尽量减少计算布局， 所以会把一些动作分组计算：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">div1</span>.<span style="color:#a6e22e">style</span>.<span style="color:#a6e22e">height</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;200px&#34;</span>;
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">height1</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">div1</span>.<span style="color:#a6e22e">clientHeight</span>; <span style="color:#75715e">// &lt;-- layout 1
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">div2</span>.<span style="color:#a6e22e">style</span>.<span style="color:#a6e22e">margin</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;300px&#34;</span>;
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">height2</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">div2</span>.<span style="color:#a6e22e">clientHeight</span>; <span style="color:#75715e">// &lt;-- layout 2
-</span></span></span></code></pre></div><p>第一行改了 <code>div</code> 的高度
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#a6e22e">div1</span>.<span style="color:#a6e22e">style</span>.<span style="color:#a6e22e">height</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;200px&#34;</span>;
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">height1</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">div1</span>.<span style="color:#a6e22e">clientHeight</span>; <span style="color:#75715e">// &lt;-- layout 1
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">div2</span>.<span style="color:#a6e22e">style</span>.<span style="color:#a6e22e">margin</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;300px&#34;</span>;
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">height2</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">div2</span>.<span style="color:#a6e22e">clientHeight</span>; <span style="color:#75715e">// &lt;-- layout 2
+</span></code></pre></div><p>第一行改了 <code>div</code> 的高度
 第二行，浏览器要读取属性， 但是咱们的高度改变还没动能， 所以浏览器要强制重新布局。
 第三四行也是一样的。
 所以我们可以换一种更优的分组写法：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">div1</span>.<span style="color:#a6e22e">style</span>.<span style="color:#a6e22e">height</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;200px&#34;</span>;
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">div2</span>.<span style="color:#a6e22e">style</span>.<span style="color:#a6e22e">margin</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;300px&#34;</span>;
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">height1</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">div1</span>.<span style="color:#a6e22e">clientHeight</span>; <span style="color:#75715e">// &lt;-- layout 1
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">height2</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">div2</span>.<span style="color:#a6e22e">clientHeight</span>;
-</span></span></code></pre></div><p>上面的写法可以让我们避免两次布局， 因为到了第四行的时候， 已经拿到了全部的数据了。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#a6e22e">div1</span>.<span style="color:#a6e22e">style</span>.<span style="color:#a6e22e">height</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;200px&#34;</span>;
+<span style="color:#a6e22e">div2</span>.<span style="color:#a6e22e">style</span>.<span style="color:#a6e22e">margin</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;300px&#34;</span>;
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">height1</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">div1</span>.<span style="color:#a6e22e">clientHeight</span>; <span style="color:#75715e">// &lt;-- layout 1
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">height2</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">div2</span>.<span style="color:#a6e22e">clientHeight</span>;
+</code></pre></div><p>上面的写法可以让我们避免两次布局， 因为到了第四行的时候， 已经拿到了全部的数据了。</p>
 <p>我们现在看到， 事件循环从单个循环变成了多个循环了， 因为我们会在任务和微任务的时候， 随时触发强制布局(force layout).
 
         <img class="mx-auto" alt="20240208103233.png" src="pics/20240208103233.png" />   
@@ -307,27 +304,28 @@
         <img class="mx-auto" alt="20240208133830.png" src="pics/20240208133830.png" />   
     
 我们可以在 <a href="https://github.com/w3c/longtasks/blob/loaf-explainer/loaf-explainer.md#the-current-situation">https://github.com/w3c/longtasks/blob/loaf-explainer/loaf-explainer.md#the-current-situation</a> 这里看到现代浏览器事件循环的示意代码：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">while</span> (<span style="color:#66d9ef">true</span>) {
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">taskStartTime</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">performance</span>.<span style="color:#a6e22e">now</span>();
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// It&#39;s unspecified where UI events fit in. Should each have their own task?
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">task</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">eventQueue</span>.<span style="color:#a6e22e">pop</span>();
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">task</span>)
-</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">task</span>.<span style="color:#a6e22e">run</span>();
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">performance</span>.<span style="color:#a6e22e">now</span>() <span style="color:#f92672">-</span> <span style="color:#a6e22e">taskStartTime</span> <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">50</span>)
-</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">reportLongTask</span>();
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (<span style="color:#f92672">!</span><span style="color:#a6e22e">hasRenderingOpportunity</span>())
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">continue</span>;
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">invokeAnimationFrameCallbacks</span>();
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">while</span> (<span style="color:#a6e22e">needsStyleAndLayout</span>()) {
-</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">styleAndLayout</span>();
-</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">invokeResizeObservers</span>();
-</span></span><span style="display:flex;"><span>    }
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">markPaintTiming</span>();
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">render</span>();
-</span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><hr>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">while</span> (<span style="color:#66d9ef">true</span>) {
+    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">taskStartTime</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">performance</span>.<span style="color:#a6e22e">now</span>();
+    <span style="color:#75715e">// It&#39;s unspecified where UI events fit in. Should each have their own task?
+</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">task</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">eventQueue</span>.<span style="color:#a6e22e">pop</span>();
+    <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">task</span>)
+        <span style="color:#a6e22e">task</span>.<span style="color:#a6e22e">run</span>();
+    <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">performance</span>.<span style="color:#a6e22e">now</span>() <span style="color:#f92672">-</span> <span style="color:#a6e22e">taskStartTime</span> <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">50</span>)
+        <span style="color:#a6e22e">reportLongTask</span>();
+
+    <span style="color:#66d9ef">if</span> (<span style="color:#f92672">!</span><span style="color:#a6e22e">hasRenderingOpportunity</span>())
+        <span style="color:#66d9ef">continue</span>;
+
+    <span style="color:#a6e22e">invokeAnimationFrameCallbacks</span>();
+    <span style="color:#66d9ef">while</span> (<span style="color:#a6e22e">needsStyleAndLayout</span>()) {
+        <span style="color:#a6e22e">styleAndLayout</span>();
+        <span style="color:#a6e22e">invokeResizeObservers</span>();
+    }
+    <span style="color:#a6e22e">markPaintTiming</span>();
+    <span style="color:#a6e22e">render</span>();
+}
+
+</code></pre></div><hr>
 <ul>
 <li>2024.2.8  13:51 终于翻完了初稿</li>
 <li></li>
@@ -369,7 +367,7 @@
 
                     <footer id="footer">
     <div>
-        &copy; 2024 <a href="http://localhost:1313/blog/">Hoi ! By 佳琦&#43;7</a>
+        &copy; 2024 <a href="https://mammoth777.github.io/blog/">Hoi ! By 佳琦&#43;7</a>
         
     </div>
     <br />
@@ -408,10 +406,10 @@
 
                 <div id="secondary">
     <section class="widget">
-        <form id="search" action='http://localhost:1313/blog/search' method="get" accept-charset="utf-8" _lpchecked="1">
+        <form id="search" action='https://mammoth777.github.io/blog/search' method="get" accept-charset="utf-8" _lpchecked="1">
       
       <input type="text" name="q" maxlength="20" placeholder="Search">
-      <input type="hidden" name="sitesearch" value="http://localhost:1313/blog/">
+      <input type="hidden" name="sitesearch" value="https://mammoth777.github.io/blog/">
       <button type="submit" class="submit icon-search"></button>
 </form>
     </section>
@@ -421,27 +419,23 @@
 <ul class="widget-list">
     
     <li>
-        <a href="http://localhost:1313/blog/posts/frontend/eventloop/" title="浏览器事件循环-微任务和宏任务，调用栈，渲染队列：布局，绘制与合成">浏览器事件循环-微任务和宏任务，调用栈，渲染队列：布局，绘制与合成</a>
+        <a href="https://mammoth777.github.io/blog/posts/frontend/eventloop/" title="浏览器事件循环-微任务和宏任务，调用栈，渲染队列：布局，绘制与合成">浏览器事件循环-微任务和宏任务，调用栈，渲染队列：布局，绘制与合成</a>
     </li>
     
     <li>
-        <a href="http://localhost:1313/blog/posts/bb/test/" title="Test">Test</a>
+        <a href="https://mammoth777.github.io/blog/posts/golang/grpc-go/" title="Go 使用 grpc">Go 使用 grpc</a>
     </li>
     
     <li>
-        <a href="http://localhost:1313/blog/posts/golang/grpc-go/" title="Go 使用 grpc">Go 使用 grpc</a>
+        <a href="https://mammoth777.github.io/blog/posts/bb/" title="BB">BB</a>
     </li>
     
     <li>
-        <a href="http://localhost:1313/blog/posts/bb/idx/" title="BB">BB</a>
+        <a href="https://mammoth777.github.io/blog/posts/general/" title="General">General</a>
     </li>
     
     <li>
-        <a href="http://localhost:1313/blog/posts/general/idx/" title="General">General</a>
-    </li>
-    
-    <li>
-        <a href="http://localhost:1313/blog/posts/server/docker/" title="Docker">Docker</a>
+        <a href="https://mammoth777.github.io/blog/posts/server/docker/" title="Docker">Docker</a>
     </li>
     
 </ul>
@@ -453,15 +447,17 @@
         <h3 class="widget-title"><a href='/blog/categories/'>分类</a></h3>
 <ul class="widget-list">
     
-    <li><a href="http://localhost:1313/blog/categories/docker/">Docker (1)</a></li>
+    <li><a href="https://mammoth777.github.io/blog/categories/bb/">bb (1)</a></li>
     
-    <li><a href="http://localhost:1313/blog/categories/general/">General (2)</a></li>
+    <li><a href="https://mammoth777.github.io/blog/categories/docker/">docker (1)</a></li>
     
-    <li><a href="http://localhost:1313/blog/categories/golang/">Golang (1)</a></li>
+    <li><a href="https://mammoth777.github.io/blog/categories/general/">General (2)</a></li>
     
-    <li><a href="http://localhost:1313/blog/categories/server/">Server (1)</a></li>
+    <li><a href="https://mammoth777.github.io/blog/categories/golang/">golang (1)</a></li>
     
-    <li><a href="http://localhost:1313/blog/categories/%E5%89%8D%E7%AB%AF/">前端 (1)</a></li>
+    <li><a href="https://mammoth777.github.io/blog/categories/server/">server (1)</a></li>
+    
+    <li><a href="https://mammoth777.github.io/blog/categories/%E5%89%8D%E7%AB%AF/">前端 (1)</a></li>
     
 </ul>
     </section>
@@ -478,7 +474,7 @@
     <section class="widget">
         <h3 class="widget-title">其它</h3>
         <ul class="widget-list">
-            <li><a href="http://localhost:1313/blog/index.xml">文章 RSS</a></li>
+            <li><a href="https://mammoth777.github.io/blog/index.xml">文章 RSS</a></li>
         </ul>
     </section>
 </div>

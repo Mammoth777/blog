@@ -2,46 +2,64 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Hoi !</title>
-    <link>http://localhost:1313/blog/categories/</link>
+    <link>https://mammoth777.github.io/blog/categories/</link>
     <description>Recent content in Categories on Hoi !</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 12 Jan 2024 11:15:14 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 12 Jan 2024 11:15:14 +0800</lastBuildDate><atom:link href="https://mammoth777.github.io/blog/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>前端</title>
-      <link>http://localhost:1313/blog/categories/%E5%89%8D%E7%AB%AF/</link>
+      <link>https://mammoth777.github.io/blog/categories/%E5%89%8D%E7%AB%AF/</link>
       <pubDate>Fri, 12 Jan 2024 11:15:14 +0800</pubDate>
-      <guid>http://localhost:1313/blog/categories/%E5%89%8D%E7%AB%AF/</guid>
+      
+      <guid>https://mammoth777.github.io/blog/categories/%E5%89%8D%E7%AB%AF/</guid>
       <description></description>
     </item>
+    
     <item>
       <title>General</title>
-      <link>http://localhost:1313/blog/categories/general/</link>
+      <link>https://mammoth777.github.io/blog/categories/general/</link>
       <pubDate>Fri, 12 Aug 2022 11:15:14 +0800</pubDate>
-      <guid>http://localhost:1313/blog/categories/general/</guid>
+      
+      <guid>https://mammoth777.github.io/blog/categories/general/</guid>
       <description></description>
     </item>
+    
     <item>
-      <title>Golang</title>
-      <link>http://localhost:1313/blog/categories/golang/</link>
+      <title>golang</title>
+      <link>https://mammoth777.github.io/blog/categories/golang/</link>
       <pubDate>Fri, 12 Aug 2022 11:15:14 +0800</pubDate>
-      <guid>http://localhost:1313/blog/categories/golang/</guid>
+      
+      <guid>https://mammoth777.github.io/blog/categories/golang/</guid>
       <description></description>
     </item>
+    
     <item>
-      <title>Docker</title>
-      <link>http://localhost:1313/blog/categories/docker/</link>
-      <pubDate>Tue, 02 Aug 2022 13:30:26 +0800</pubDate>
-      <guid>http://localhost:1313/blog/categories/docker/</guid>
+      <title>bb</title>
+      <link>https://mammoth777.github.io/blog/categories/bb/</link>
+      <pubDate>Wed, 03 Aug 2022 23:06:30 +0800</pubDate>
+      
+      <guid>https://mammoth777.github.io/blog/categories/bb/</guid>
       <description></description>
     </item>
+    
     <item>
-      <title>Server</title>
-      <link>http://localhost:1313/blog/categories/server/</link>
+      <title>docker</title>
+      <link>https://mammoth777.github.io/blog/categories/docker/</link>
       <pubDate>Tue, 02 Aug 2022 13:30:26 +0800</pubDate>
-      <guid>http://localhost:1313/blog/categories/server/</guid>
+      
+      <guid>https://mammoth777.github.io/blog/categories/docker/</guid>
       <description></description>
     </item>
+    
+    <item>
+      <title>server</title>
+      <link>https://mammoth777.github.io/blog/categories/server/</link>
+      <pubDate>Tue, 02 Aug 2022 13:30:26 +0800</pubDate>
+      
+      <guid>https://mammoth777.github.io/blog/categories/server/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

@@ -1,19 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Golang on Hoi !</title>
-    <link>http://localhost:1313/blog/categories/golang/</link>
-    <description>Recent content in Golang on Hoi !</description>
+    <title>golang on Hoi !</title>
+    <link>https://mammoth777.github.io/blog/categories/golang/</link>
+    <description>Recent content in golang on Hoi !</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 12 Aug 2022 11:15:14 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/categories/golang/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 12 Aug 2022 11:15:14 +0800</lastBuildDate><atom:link href="https://mammoth777.github.io/blog/categories/golang/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Go 使用 grpc</title>
-      <link>http://localhost:1313/blog/posts/golang/grpc-go/</link>
+      <link>https://mammoth777.github.io/blog/posts/golang/grpc-go/</link>
       <pubDate>Fri, 12 Aug 2022 11:15:14 +0800</pubDate>
-      <guid>http://localhost:1313/blog/posts/golang/grpc-go/</guid>
-      <description>快速开始 安装proto-gen-go-grpc插件 go install google.golang.org/grpc/cmd/protoc-gen-go-grpc@latest 来看看版本&#xA;protoc-gen-go-grpc --version protoc-gen-go-grpc 1.1.0 编写proto文件 syntax = &amp;#34;proto3&amp;#34;; package hw; option go_package=&amp;#34;./hello&amp;#34;; // 告诉protoc生成的文件的包名 service Greeter { rpc SayHello (HelloRequest) returns (HelloReply) {} } message HelloRequest { string name = 1; } message HelloReply { string name = 1; } 生成代码 protoc -I=. --go_out=./grpc/service --go-grpc_out=./grpc/service ./grpc/service/hello/helloworld.proto 说明：&#xA;go_out: 生成后的*.pb.go文件位置 go-grpc_out: 生成后的*_grpc.pb.go文件位置 -I: 即-IPATH或--proto_path=PATH， 指定搜索路径参数，表示我们在那个路径下搜索.proto文件 </description>
+      
+      <guid>https://mammoth777.github.io/blog/posts/golang/grpc-go/</guid>
+      <description>快速开始  安装proto-gen-go-grpc插件  go install google.golang.org/grpc/cmd/protoc-gen-go-grpc@latest 来看看版本
+protoc-gen-go-grpc --version protoc-gen-go-grpc 1.1.0 编写proto文件  syntax = &amp;#34;proto3&amp;#34;;package hw;option go_package=&amp;#34;./hello&amp;#34;; // 告诉protoc生成的文件的包名 service Greeter { rpc SayHello (HelloRequest) returns (HelloReply) {}}message HelloRequest { string name = 1;}message HelloReply { string name = 1;}生成代码  protoc -I=. --go_out=./grpc/service --go-grpc_out=./grpc/service ./grpc/service/hello/helloworld.proto 说明：
+ go_out: 生成后的*.pb.go文件位置 go-grpc_out: 生成后的*_grpc.pb.go文件位置 -I: 即-IPATH或--proto_path=PATH， 指定搜索路径参数，表示我们在那个路径下搜索.proto文件  </description>
     </item>
+    
   </channel>
 </rss>

@@ -2,54 +2,54 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/blog/categories/</loc>
+    <loc>https://mammoth777.github.io/blog/categories/</loc>
     <lastmod>2024-01-12T11:15:14+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/</loc>
+    <loc>https://mammoth777.github.io/blog/</loc>
     <lastmod>2024-01-12T11:15:14+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/posts/</loc>
+    <loc>https://mammoth777.github.io/blog/posts/</loc>
     <lastmod>2024-01-12T11:15:14+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/categories/%E5%89%8D%E7%AB%AF/</loc>
+    <loc>https://mammoth777.github.io/blog/categories/%E5%89%8D%E7%AB%AF/</loc>
     <lastmod>2024-01-12T11:15:14+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/posts/frontend/eventloop/</loc>
+    <loc>https://mammoth777.github.io/blog/posts/frontend/eventloop/</loc>
     <lastmod>2024-01-12T11:15:14+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/posts/bb/test/</loc>
-    <lastmod>2022-08-12T11:33:22+08:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/blog/categories/general/</loc>
+    <loc>https://mammoth777.github.io/blog/categories/general/</loc>
     <lastmod>2022-08-12T11:15:14+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/posts/golang/grpc-go/</loc>
+    <loc>https://mammoth777.github.io/blog/posts/golang/grpc-go/</loc>
     <lastmod>2022-08-12T11:15:14+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/categories/golang/</loc>
+    <loc>https://mammoth777.github.io/blog/categories/golang/</loc>
     <lastmod>2022-08-12T11:15:14+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/posts/bb/idx/</loc>
+    <loc>https://mammoth777.github.io/blog/posts/bb/</loc>
     <lastmod>2022-08-03T23:06:30+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/about/</loc>
+    <loc>https://mammoth777.github.io/blog/categories/bb/</loc>
+    <lastmod>2022-08-03T23:06:30+08:00</lastmod>
+  </url><url>
+    <loc>https://mammoth777.github.io/blog/about/</loc>
     <lastmod>2022-08-03T22:56:07+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/posts/general/idx/</loc>
+    <loc>https://mammoth777.github.io/blog/posts/general/</loc>
     <lastmod>2022-08-03T22:55:03+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/search/</loc>
+    <loc>https://mammoth777.github.io/blog/search/</loc>
     <lastmod>2022-08-02T15:17:31+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/categories/docker/</loc>
+    <loc>https://mammoth777.github.io/blog/posts/server/docker/</loc>
     <lastmod>2022-08-02T13:30:26+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/posts/server/docker/</loc>
+    <loc>https://mammoth777.github.io/blog/categories/docker/</loc>
     <lastmod>2022-08-02T13:30:26+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/categories/server/</loc>
+    <loc>https://mammoth777.github.io/blog/categories/server/</loc>
     <lastmod>2022-08-02T13:30:26+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/tags/</loc>
+    <loc>https://mammoth777.github.io/blog/tags/</loc>
   </url>
 </urlset>
