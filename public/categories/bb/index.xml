@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>bb on Hoi !</title>
-    <link>https://mammoth777.github.io/blog/categories/bb/</link>
-    <description>Recent content in bb on Hoi !</description>
+    <title>Bb on Hoi !</title>
+    <link>http://localhost:1313/blog/categories/bb/</link>
+    <description>Recent content in Bb on Hoi !</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 03 Aug 2022 23:06:30 +0800</lastBuildDate><atom:link href="https://mammoth777.github.io/blog/categories/bb/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 03 Aug 2022 23:06:30 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/blog/categories/bb/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>BB</title>
-      <link>https://mammoth777.github.io/blog/posts/bb/</link>
+      <link>http://localhost:1313/blog/posts/bb/</link>
       <pubDate>Wed, 03 Aug 2022 23:06:30 +0800</pubDate>
-      
-      <guid>https://mammoth777.github.io/blog/posts/bb/</guid>
+      <guid>http://localhost:1313/blog/posts/bb/</guid>
       <description>my first bb 我的第一篇随笔</description>
     </item>
-    
   </channel>
 </rss>

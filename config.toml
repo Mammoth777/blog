@@ -1,7 +1,7 @@
 baseURL = 'https://mammoth777.github.io/blog/'
 languageCode = 'en-us'
 title = 'Hoi !'
-theme = "maupassant-hugo"
+theme = "hugo-theme-nix"
 buildfuture = true
 builddrafts = true
 
@@ -9,7 +9,14 @@ builddrafts = true
 name = '佳琦+7'
 
 [params]
-localSearch = true
+  localSearch = true
+  Name = "Jacob"
+  HeaderUsername = "jacob"
+  HeaderHostname = "jinyu.cool"
+  About = "Gooooooood boy"
+  ProfilePicture = "https://avatars.githubusercontent.com/u/25866839?s=400&u=aec3e16d03bcd68e7f9c558b9c65c065aed95494&v=4"
+  GithubID = "https://github.com/Mammoth777"
+  TelegramID = "hoi12138"
 
 [params.utteranc]
   enable = true
@@ -18,27 +25,23 @@ localSearch = true
   theme = "github-light" # 样式主题，有github-light和github-dark两种
 
 [menu]
-
-  # [[menu.main]]
-  #   identifier = "General"
-  #   name = "通用"
-  #   url = "/posts/general/"
-  #   weight = 1
-
-  [[menu.main]]
+  [[menu.header]]
     identifier = "bb"
     name = "随笔"
     url = "/posts/bb/"
-    weight = 2
+    weight = 1
 
-  # [[menu.main]]
-  #   identifier = "前端"
-  #   name = "前端"
-  #   url = "/posts/frontend/"
-  #   weight = 3
+  [[menu.header]]
+    parent = "post"
+    name = "all_posts"
+    url = "/posts"
 
-  [[menu.main]]
-    identifier = "about"
-    name = "关于"
-    url = "/about/"
-    weight = 3
+  [[menu.header]]
+    parent = "post"
+    name = "categories"
+    url = "/categories"
+
+  [[menu.header]]
+    parent = "post"
+    name = "tags"
+    url = "/tags"
