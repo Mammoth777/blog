@@ -4,6 +4,7 @@ paginate = 5
 theme = 'PaperMod'
 author = "Jacob"
 enableEmoji = true
+languageCode = "en-us"
 
 enableRobotsTXT = true
 buildDrafts = false
