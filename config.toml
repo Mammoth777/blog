@@ -1,5 +1,5 @@
 baseURL = 'https://mammoth777.github.io/blog/'
-languageCode = "en-us"
+# languageCode = "en-us"
 title = "Hoi !"
 paginate = 5
 theme = 'PaperMod'

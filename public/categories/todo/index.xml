@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Todo on Hoi !</title>
-    <link>http://localhost:1313/blog/categories/todo/</link>
+    <link>https://mammoth777.github.io/blog/categories/todo/</link>
     <description>Recent content in Todo on Hoi !</description>
     <image>
       <title>Hoi !</title>
-      <url>http://localhost:1313/blog/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>http://localhost:1313/blog/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://mammoth777.github.io/blog/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://mammoth777.github.io/blog/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- 0.124.1</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 04 Jul 2024 08:27:09 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/categories/todo/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://mammoth777.github.io/blog/categories/todo/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hugo 通过 git submodule 安装主题</title>
-      <link>http://localhost:1313/blog/posts/general/blog/</link>
+      <link>https://mammoth777.github.io/blog/posts/general/blog/</link>
       <pubDate>Thu, 04 Jul 2024 08:27:09 +0800</pubDate>
-      <guid>http://localhost:1313/blog/posts/general/blog/</guid>
+      <guid>https://mammoth777.github.io/blog/posts/general/blog/</guid>
       <description>未完待续</description>
     </item>
   </channel>

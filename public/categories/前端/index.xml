@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>前端 on Hoi !</title>
-    <link>http://localhost:1313/blog/categories/%E5%89%8D%E7%AB%AF/</link>
+    <link>https://mammoth777.github.io/blog/categories/%E5%89%8D%E7%AB%AF/</link>
     <description>Recent content in 前端 on Hoi !</description>
     <image>
       <title>Hoi !</title>
-      <url>http://localhost:1313/blog/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>http://localhost:1313/blog/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://mammoth777.github.io/blog/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://mammoth777.github.io/blog/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- 0.124.1</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 12 Jan 2024 11:15:14 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/categories/%E5%89%8D%E7%AB%AF/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://mammoth777.github.io/blog/categories/%E5%89%8D%E7%AB%AF/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>浏览器事件循环-微任务和宏任务，调用栈，渲染队列：布局，绘制与合成</title>
-      <link>http://localhost:1313/blog/posts/frontend/eventloop/</link>
+      <link>https://mammoth777.github.io/blog/posts/frontend/eventloop/</link>
       <pubDate>Fri, 12 Jan 2024 11:15:14 +0800</pubDate>
-      <guid>http://localhost:1313/blog/posts/frontend/eventloop/</guid>
+      <guid>https://mammoth777.github.io/blog/posts/frontend/eventloop/</guid>
       <description>翻译计划： 2024.1
 此文翻译自： https://blog.xnim.me/event-loop-and-render-queue#heading-task-queue 已经获取作者授权
 此文主旨在于关注事件队列， 执行顺序 以及开发者如何优化代码。 完整思路如下： 事件队列 古老的操作系统不支持多线程， 那时候的事件循环就类似这样一个简单的循环:
