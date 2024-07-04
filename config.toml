@@ -1,47 +1,153 @@
 baseURL = 'https://mammoth777.github.io/blog/'
-languageCode = 'en-us'
-title = 'Hoi !'
-theme = "hugo-theme-nix"
-buildfuture = true
-builddrafts = true
+languageCode = "en-us"
+title = "Hoi !"
+paginate = 5
+theme = 'PaperMod'
+author = "Jacob"
+enableEmoji = true
 
-[author]
-name = '佳琦+7'
+enableRobotsTXT = true
+buildDrafts = false
+buildFuture = false
+buildExpired = false
+pygmentsUseClasses = true
+
+[minify]
+disableXML = true
+minifyOutput = true
 
 [params]
-  localSearch = true
-  Name = "Jacob"
-  HeaderUsername = "jacob"
-  HeaderHostname = "jinyu.cool"
-  About = "Gooooooood boy"
-  ProfilePicture = "https://avatars.githubusercontent.com/u/25866839?s=400&u=aec3e16d03bcd68e7f9c558b9c65c065aed95494&v=4"
-  GithubID = "https://github.com/Mammoth777"
-  TelegramID = "hoi12138"
+env = "production"
+title = "Jacob's Blog"
+description = "人类必须相爱，否则就会灭亡"
+keywords = ["Blog", "Portfolio", "PaperMod"]
+author = "Jacob"
+images = ["<link or path of image for opengraph, twitter-cards>"]
+DateFormat = "January 2, 2006"
+defaultTheme = "auto"
+disableThemeToggle = false
+ShowReadingTime = true
+ShowShareButtons = true
+ShowPostNavLinks = true
+ShowBreadCrumbs = true
+ShowCodeCopyButtons = true
+ShowWordCount = true
+ShowRssButtonInSectionTermList = true
+UseHugoToc = true
+disableSpecial1stPost = false
+disableScrollToTop = false
+comments = false
+hidemeta = false
+hideSummary = false
+showtoc = true
+tocopen = false
 
-[params.utteranc]
-  enable = true
-  repo = "Mammoth777/blog-discuss"    # 存储评论的Repo，格式为 owner/repo
-  issueTerm = "pathname"  #表示你选择以那种方式让github issue的评论和你的文章关联。
-  theme = "github-light" # 样式主题，有github-light和github-dark两种
+# [params.assets]
+# favicon = "<link / abs url>"
+# favicon16x16 = "<link / abs url>"
+# favicon32x32 = "<link / abs url>"
+# apple_touch_icon = "<link / abs url>"
+# safari_pinned_tab = "<link / abs url>"
 
-[menu]
-  [[menu.header]]
-    identifier = "bb"
-    name = "随笔"
-    url = "/posts/bb/"
-    weight = 1
+[params.label]
+text = "Jacob's Blog"
+icon = "/apple-touch-icon.png"
+iconHeight = 35
 
-  [[menu.header]]
-    parent = "post"
-    name = "all_posts"
-    url = "/posts"
+[params.profileMode]
+enabled = true
+title = "Hoi !"
+subtitle = "人类必须相爱，否则就会灭亡"
+imageUrl = "https://avatars.githubusercontent.com/u/25866839?s=400&u=aec3e16d03bcd68e7f9c558b9c65c065aed95494&v=4"
+imageWidth = 120
+imageHeight = 120
+imageTitle = "my image"
 
-  [[menu.header]]
-    parent = "post"
-    name = "categories"
-    url = "/categories"
+[[params.profileMode.buttons]]
+name = "Posts"
+url = "posts"
 
-  [[menu.header]]
-    parent = "post"
-    name = "tags"
-    url = "/tags"
+[[params.profileMode.buttons]]
+name = "About"
+url = "about"
+
+[params.homeInfoParams]
+Title = "Hi there 👋"
+Content = "Welcome to my blog"
+
+# [[params.socialIcons]]
+# name = "x"
+# url = "https://x.com/"
+
+[[params.socialIcons]]
+name = "telegram"
+url = "https://t.me/hoi12138"
+
+[[params.socialIcons]]
+name = "github"
+url = "https://github.com/Mammoth777"
+
+[params.analytics.google]
+SiteVerificationTag = "XYZabc"
+
+[params.analytics.bing]
+SiteVerificationTag = "XYZabc"
+
+[params.analytics.yandex]
+SiteVerificationTag = "XYZabc"
+
+[params.cover]
+hidden = true
+hiddenInList = true
+hiddenInSingle = true
+
+[params.editPost]
+URL = "https://github.com/Mammoth777/blog/tree/main/content"
+Text = "source"
+appendFilePath = true
+
+[params.fuseOpts]
+isCaseSensitive = false
+shouldSort = true
+location = 0
+distance = 1_000
+threshold = 0.4
+minMatchCharLength = 0
+limit = 10
+keys = ["title", "permalink", "summary", "content"]
+
+[[menu.main]]
+name = "Home"
+url = "/"
+weight = 1
+
+[[menu.main]]
+identifier = "categories"
+name = "Categories"
+url = "/categories/"
+weight = 10
+
+[[menu.main]]
+name = "Archives"
+url = "/archives"
+weight = 20
+
+[[menu.main]]
+name = "Search"
+url = "/search"
+weight = 30
+
+# [[menu.main]]
+# identifier = "tags"
+# name = "tags"
+# url = "/tags/"
+# weight = 20
+
+# [[menu.main]]
+# identifier = "example"
+# name = "example.org"
+# url = "https://example.org"
+# weight = 30
+
+[markup.highlight]
+noClasses = false

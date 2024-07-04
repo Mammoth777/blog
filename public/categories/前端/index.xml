@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>前端 on Hoi !</title>
     <link>http://localhost:1313/blog/categories/%E5%89%8D%E7%AB%AF/</link>
     <description>Recent content in 前端 on Hoi !</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <image>
+      <title>Hoi !</title>
+      <url>http://localhost:1313/blog/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>http://localhost:1313/blog/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- 0.124.1</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 12 Jan 2024 11:15:14 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/blog/categories/%E5%89%8D%E7%AB%AF/index.xml" rel="self" type="application/rss+xml" />
@@ -13,7 +18,12 @@
       <link>http://localhost:1313/blog/posts/frontend/eventloop/</link>
       <pubDate>Fri, 12 Jan 2024 11:15:14 +0800</pubDate>
       <guid>http://localhost:1313/blog/posts/frontend/eventloop/</guid>
-      <description>翻译计划： 2024.1&#xA;此文翻译自： https://blog.xnim.me/event-loop-and-render-queue#heading-task-queue 已经获取作者授权&#xA;此文主旨在于关注事件队列， 执行顺序 以及开发者如何优化代码。 完整思路如下： 事件队列 古老的操作系统不支持多线程， 那时候的事件循环就类似这样一个简单的循环:&#xA;while (true) { if (execQueue.isNotEmpty()) { execQueue.pop().exec(); } } 在老的操作系统上， 这段代码会疯狂跑满全部cpu。 （真的吗？ &amp;ndash; 年轻的译者注） 现代操作系统调度器非常复杂， 包括优先级，执行队列， 和其他的技术。&#xA;我们可以把事件循环理解为一个圆圈，系统就一圈一圈地检查， 有没有待执行的任务 （pending task）。 下面这些行为， 都会在事件循环里生成任务：&#xA;script 标签 延迟任务： setTimeout, setInterval, requestIdleCallback 浏览器的事件处理API: click， mousedown, input, blur 等等。 有一些事件是用户初始化的，比如点击事件， tab切换这种 有的事件是来自于代码， 比如 ajax 的响应啥的 promise 状态变化； （关于promise， 可以看这个文章, emmm这篇文章是我准备留给2月份翻译的） DOMMutationObserver, IntersectionObserver 这种 Observer 家族的 RequestAnimationFrame Almost everything we described above is planned through WebAPI (or browserAPI).</description>
+      <description>翻译计划： 2024.1
+此文翻译自： https://blog.xnim.me/event-loop-and-render-queue#heading-task-queue 已经获取作者授权
+此文主旨在于关注事件队列， 执行顺序 以及开发者如何优化代码。 完整思路如下： 事件队列 古老的操作系统不支持多线程， 那时候的事件循环就类似这样一个简单的循环:
+while (true) { if (execQueue.isNotEmpty()) { execQueue.pop().exec(); } } 在老的操作系统上， 这段代码会疯狂跑满全部cpu。 （真的吗？ &amp;ndash; 年轻的译者注） 现代操作系统调度器非常复杂， 包括优先级，执行队列， 和其他的技术。
+我们可以把事件循环理解为一个圆圈，系统就一圈一圈地检查， 有没有待执行的任务 （pending task）。 下面这些行为， 都会在事件循环里生成任务：
+script 标签 延迟任务： setTimeout, setInterval, requestIdleCallback 浏览器的事件处理API: click， mousedown, input, blur 等等。 有一些事件是用户初始化的，比如点击事件， tab切换这种 有的事件是来自于代码， 比如 ajax 的响应啥的 promise 状态变化； （关于promise， 可以看这个文章, emmm这篇文章是我准备留给2月份翻译的） DOMMutationObserver, IntersectionObserver 这种 Observer 家族的 RequestAnimationFrame Almost everything we described above is planned through WebAPI (or browserAPI).</description>
     </item>
   </channel>
 </rss>

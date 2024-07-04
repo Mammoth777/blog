@@ -29,6 +29,9 @@
     <loc>http://localhost:1313/blog/posts/frontend/eventloop/</loc>
     <lastmod>2024-01-12T11:15:14+08:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/blog/posts/bb/test/</loc>
+    <lastmod>2022-08-12T11:33:22+08:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/blog/posts/golang/grpc-go/</loc>
     <lastmod>2022-08-12T11:15:14+08:00</lastmod>
   </url><url>
@@ -38,7 +41,7 @@
     <loc>http://localhost:1313/blog/categories/bb/</loc>
     <lastmod>2022-08-03T23:06:30+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/posts/bb/</loc>
+    <loc>http://localhost:1313/blog/posts/bb/idx/</loc>
     <lastmod>2022-08-03T23:06:30+08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/blog/about/</loc>
@@ -46,9 +49,6 @@
   </url><url>
     <loc>http://localhost:1313/blog/posts/general/idx/</loc>
     <lastmod>2022-08-03T22:55:03+08:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/blog/search/</loc>
-    <lastmod>2022-08-02T15:17:31+08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/blog/categories/docker/</loc>
     <lastmod>2022-08-02T13:30:26+08:00</lastmod>
@@ -58,6 +58,10 @@
   </url><url>
     <loc>http://localhost:1313/blog/categories/server/</loc>
     <lastmod>2022-08-02T13:30:26+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blog/archives/</loc>
+  </url><url>
+    <loc>http://localhost:1313/blog/search/</loc>
   </url><url>
     <loc>http://localhost:1313/blog/tags/</loc>
   </url>
