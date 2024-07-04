@@ -2,9 +2,6 @@
 	path = public
 	url = git@github.com:Mammoth777/Mammoth777.github.io.git
 
-[submodule "themes/kaslaanka"]
-	path = themes/kaslaanka
-	url = https://github.com/M1cR0xf7/kaslaanka.git
 [submodule "themes/PaperMod"]
 	path = themes/PaperMod
 	url = https://github.com/adityatelange/hugo-PaperMod.git
