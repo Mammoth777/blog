@@ -14,7 +14,7 @@
     <lastBuildDate>Thu, 04 Jul 2024 08:27:09 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/blog/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Hugo &#43; GitHub Pages &#43; Actions 个人博客搭建</title>
+      <title>一个免费的博客方案</title>
       <link>http://localhost:1313/blog/posts/general/%E4%B8%80%E4%B8%AA%E5%85%8D%E8%B4%B9%E5%8D%9A%E5%AE%A2%E6%96%B9%E6%A1%88/</link>
       <pubDate>Thu, 04 Jul 2024 08:27:09 +0800</pubDate>
       <guid>http://localhost:1313/blog/posts/general/%E4%B8%80%E4%B8%AA%E5%85%8D%E8%B4%B9%E5%8D%9A%E5%AE%A2%E6%96%B9%E6%A1%88/</guid>
@@ -25,9 +25,7 @@
 1.1.1 Windows 打开命令行， 输入：
 winget install Hugo.Hugo.Extended (待验证)
 1.1.2 MacOS 安装：brew install hugo 验证： hugo version 看到输出类似这样的版本， 则表示成功： hugo v0.128.1+extended darwin/arm64 BuildDate=2024-07-02T06:46:41Z VendorInfo=brew
-1.2 初始化站点 初始化： hugo new site myblog 启动博客： hugo server
-2. 【写博客】 这时候我们已经有了一个全新的博客空壳
-3. 通过GitHub Pages发布站点 4. 映射到自己的域名 4.1 搞个域名 4.2 配置https FAQ 1. 为什么启动后， 是空白页页面， 报错如下 WARN 2024/07/04 21:05:13 found no layout file for &amp;quot;HTML&amp;quot; for kind &amp;quot;page&amp;quot;: You should create a template file which matches Hugo Layouts Lookup Rules for this combination.</description>
+1.2 初始化站点 hugo new site test # 新建一个站点 cd test # 进入站点目录 git init # 初始化git git submodule add https://github.com/theNewDynamic/gohugo-theme-ananke.git themes/ananke # 添加主题 echo &amp;#34;theme = &amp;#39;ananke&amp;#39;&amp;#34; &amp;gt;&amp;gt; hugo.</description>
     </item>
     <item>
       <title>浏览器事件循环-微任务和宏任务，调用栈，渲染队列：布局，绘制与合成</title>
