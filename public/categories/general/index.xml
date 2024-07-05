@@ -15,10 +15,13 @@
     <atom:link href="http://localhost:1313/blog/categories/general/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hugo &#43; GitHub Pages &#43; Actions 个人博客搭建</title>
-      <link>http://localhost:1313/blog/posts/general/blog/</link>
+      <link>http://localhost:1313/blog/posts/general/%E4%B8%80%E4%B8%AA%E5%85%8D%E8%B4%B9%E5%8D%9A%E5%AE%A2%E6%96%B9%E6%A1%88/</link>
       <pubDate>Thu, 04 Jul 2024 08:27:09 +0800</pubDate>
-      <guid>http://localhost:1313/blog/posts/general/blog/</guid>
-      <description>FAQ 1. 为什么启动后， 是空白页页面， 报错如下 WARN 2024/07/04 21:05:13 found no layout file for &amp;#34;HTML&amp;#34; for kind &amp;#34;page&amp;#34;: You should create a template file which matches Hugo Layouts Lookup Rules for this combination. 这里是因为主题加载失败， 通常我们是通过submodule加载的主题， 重新拉取主题即可
+      <guid>http://localhost:1313/blog/posts/general/%E4%B8%80%E4%B8%AA%E5%85%8D%E8%B4%B9%E5%8D%9A%E5%AE%A2%E6%96%B9%E6%A1%88/</guid>
+      <description>发布一个博客， 总共分几步？ 三步。创建博客站点，写博客，发出去。
+博客站点就像是一个空壳博客，存在于我们的电脑上 我们需要在这个站点中写文章 写完了不能只有自己看呀， 就需要发布到网上 下面， 把这三步具像化一点～～
+1. 【创建博客站点】：通过Hugo生成站点 Hugo 是一个静态网站生成器， 我们需要用它制作一个站点
+2. 通过GitHub Pages发布站点 3. 通过GitHub Actions自动化部署 4. 映射到自己的域名 4.1 搞个域名 4.2 配置https FAQ 1. 为什么启动后， 是空白页页面， 报错如下 WARN 2024/07/04 21:05:13 found no layout file for &amp;quot;HTML&amp;quot; for kind &amp;quot;page&amp;quot;: You should create a template file which matches Hugo Layouts Lookup Rules for this combination. 这里是因为主题加载失败， 通常我们是通过submodule加载的主题， 重新拉取主题即可
 git submodule update --init --recursive </description>
     </item>
     <item>
