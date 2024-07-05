@@ -2,71 +2,71 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Categories on Hoi !</title>
-    <link>https://mammoth777.github.io/blog/categories/</link>
+    <link>http://localhost:1313/blog/categories/</link>
     <description>Recent content in Categories on Hoi !</description>
     <image>
       <title>Hoi !</title>
-      <url>https://mammoth777.github.io/blog/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://mammoth777.github.io/blog/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>http://localhost:1313/blog/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>http://localhost:1313/blog/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- 0.128.1</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 04 Jul 2024 08:27:09 +0800</lastBuildDate>
-    <atom:link href="https://mammoth777.github.io/blog/categories/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blog/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>General</title>
-      <link>https://mammoth777.github.io/blog/categories/general/</link>
+      <link>http://localhost:1313/blog/categories/general/</link>
       <pubDate>Thu, 04 Jul 2024 08:27:09 +0800</pubDate>
-      <guid>https://mammoth777.github.io/blog/categories/general/</guid>
+      <guid>http://localhost:1313/blog/categories/general/</guid>
       <description></description>
     </item>
     <item>
       <title>Hugo</title>
-      <link>https://mammoth777.github.io/blog/categories/hugo/</link>
+      <link>http://localhost:1313/blog/categories/hugo/</link>
       <pubDate>Thu, 04 Jul 2024 08:27:09 +0800</pubDate>
-      <guid>https://mammoth777.github.io/blog/categories/hugo/</guid>
+      <guid>http://localhost:1313/blog/categories/hugo/</guid>
       <description></description>
     </item>
     <item>
       <title>Todo</title>
-      <link>https://mammoth777.github.io/blog/categories/todo/</link>
+      <link>http://localhost:1313/blog/categories/todo/</link>
       <pubDate>Thu, 04 Jul 2024 08:27:09 +0800</pubDate>
-      <guid>https://mammoth777.github.io/blog/categories/todo/</guid>
+      <guid>http://localhost:1313/blog/categories/todo/</guid>
       <description></description>
     </item>
     <item>
       <title>前端</title>
-      <link>https://mammoth777.github.io/blog/categories/%E5%89%8D%E7%AB%AF/</link>
+      <link>http://localhost:1313/blog/categories/%E5%89%8D%E7%AB%AF/</link>
       <pubDate>Fri, 12 Jan 2024 11:15:14 +0800</pubDate>
-      <guid>https://mammoth777.github.io/blog/categories/%E5%89%8D%E7%AB%AF/</guid>
+      <guid>http://localhost:1313/blog/categories/%E5%89%8D%E7%AB%AF/</guid>
       <description></description>
     </item>
     <item>
       <title>Golang</title>
-      <link>https://mammoth777.github.io/blog/categories/golang/</link>
+      <link>http://localhost:1313/blog/categories/golang/</link>
       <pubDate>Fri, 12 Aug 2022 11:15:14 +0800</pubDate>
-      <guid>https://mammoth777.github.io/blog/categories/golang/</guid>
+      <guid>http://localhost:1313/blog/categories/golang/</guid>
       <description></description>
     </item>
     <item>
       <title>Bb</title>
-      <link>https://mammoth777.github.io/blog/categories/bb/</link>
+      <link>http://localhost:1313/blog/categories/bb/</link>
       <pubDate>Wed, 03 Aug 2022 23:06:30 +0800</pubDate>
-      <guid>https://mammoth777.github.io/blog/categories/bb/</guid>
+      <guid>http://localhost:1313/blog/categories/bb/</guid>
       <description></description>
     </item>
     <item>
       <title>Docker</title>
-      <link>https://mammoth777.github.io/blog/categories/docker/</link>
+      <link>http://localhost:1313/blog/categories/docker/</link>
       <pubDate>Tue, 02 Aug 2022 13:30:26 +0800</pubDate>
-      <guid>https://mammoth777.github.io/blog/categories/docker/</guid>
+      <guid>http://localhost:1313/blog/categories/docker/</guid>
       <description></description>
     </item>
     <item>
       <title>Server</title>
-      <link>https://mammoth777.github.io/blog/categories/server/</link>
+      <link>http://localhost:1313/blog/categories/server/</link>
       <pubDate>Tue, 02 Aug 2022 13:30:26 +0800</pubDate>
-      <guid>https://mammoth777.github.io/blog/categories/server/</guid>
+      <guid>http://localhost:1313/blog/categories/server/</guid>
       <description></description>
     </item>
   </channel>
