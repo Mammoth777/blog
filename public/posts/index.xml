@@ -11,8 +11,28 @@
     </image>
     <generator>Hugo -- 0.128.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 04 Jul 2024 08:27:09 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 18 Jul 2024 13:46:06 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/blog/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>基于svelte的浏览器插件方案</title>
+      <link>http://localhost:1313/blog/posts/frontend/%E5%9F%BA%E4%BA%8Esvelte%E7%9A%84%E6%B5%8F%E8%A7%88%E5%99%A8%E6%8F%92%E4%BB%B6%E6%96%B9%E6%A1%88/</link>
+      <pubDate>Thu, 18 Jul 2024 13:46:06 +0800</pubDate>
+      <guid>http://localhost:1313/blog/posts/frontend/%E5%9F%BA%E4%BA%8Esvelte%E7%9A%84%E6%B5%8F%E8%A7%88%E5%99%A8%E6%8F%92%E4%BB%B6%E6%96%B9%E6%A1%88/</guid>
+      <description>最近需要制作一个浏览器插件，实现通过插件， 修改目标页面的时间。 这里选择svelte作为开发框架，因为svelte的编译方式，可以减少代码体积。
+关于svelte和vue体积的对比， 前端圈子争论不休，挑出几个风靡一时的帖子看一下：
+尤雨溪对比svelte和vue的构建体积 Jacek Schae 前端各框架对比 Jacek Scheae对多框架体积的对比图
+浏览器插件简述 浏览器插件能做什么？ chrome 给出三个能力分类：
+设计界面 控制浏览器 控制网络 详情可参考 chrome插件开发文档 了解具体使用。
+本次浏览器插件有这几种部分组成：
+manifest.json 插件的配置文件 background.js 后台脚本 content.js 内容脚本 popup.html 弹出页面 项目结构 构建配置 构建后的结构 </description>
+    </item>
+    <item>
+      <title>Jsconfig是什么</title>
+      <link>http://localhost:1313/blog/posts/jsconfig%E6%98%AF%E4%BB%80%E4%B9%88/</link>
+      <pubDate>Wed, 17 Jul 2024 08:45:19 +0800</pubDate>
+      <guid>http://localhost:1313/blog/posts/jsconfig%E6%98%AF%E4%BB%80%E4%B9%88/</guid>
+      <description></description>
+    </item>
     <item>
       <title>一个免费的博客方案</title>
       <link>http://localhost:1313/blog/posts/general/%E4%B8%80%E4%B8%AA%E5%85%8D%E8%B4%B9%E5%8D%9A%E5%AE%A2%E6%96%B9%E6%A1%88/</link>

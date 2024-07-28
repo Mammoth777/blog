@@ -10,5 +10,5 @@
 主题作为submodule引入，所以需要使用`--recursive`参数来clone
 
 ```bash
-hugo server
+hugo serve
 ```
