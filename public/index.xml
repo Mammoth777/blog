@@ -18,13 +18,13 @@
       <link>http://localhost:1313/blog/posts/frontend/%E5%9F%BA%E4%BA%8Esvelte%E7%9A%84%E6%B5%8F%E8%A7%88%E5%99%A8%E6%8F%92%E4%BB%B6%E6%96%B9%E6%A1%88/</link>
       <pubDate>Thu, 18 Jul 2024 13:46:06 +0800</pubDate>
       <guid>http://localhost:1313/blog/posts/frontend/%E5%9F%BA%E4%BA%8Esvelte%E7%9A%84%E6%B5%8F%E8%A7%88%E5%99%A8%E6%8F%92%E4%BB%B6%E6%96%B9%E6%A1%88/</guid>
-      <description>最近需要制作一个浏览器插件，实现通过插件， 修改目标页面的时间。 这里选择svelte作为开发框架，因为svelte的编译方式，可以减少代码体积。
+      <description>最近需要制作一个浏览器插件，实现通过插件， 修改目标页面的时间。 这里选择svelte作为开发框架，svelte作为无运行时的框架，可以减少代码体积(顺便玩玩没用过的框架)。
 关于svelte和vue体积的对比， 前端圈子争论不休，挑出几个风靡一时的帖子看一下：
 尤雨溪对比svelte和vue的构建体积 Jacek Schae 前端各框架对比 Jacek Scheae对多框架体积的对比图
 浏览器插件简述 浏览器插件能做什么？ chrome 给出三个能力分类：
 设计界面 控制浏览器 控制网络 详情可参考 chrome插件开发文档 了解具体使用。
-本次浏览器插件有这几种部分组成：
-manifest.json 插件的配置文件 background.js 后台脚本 content.js 内容脚本 popup.html 弹出页面 项目结构 构建配置 构建后的结构 </description>
+项目结构 目前的结构是， popup 因为有页面，作为独立的svelte项目， 通过vite构建。 其他的部分， content.js, background.js 作为原生js编写，不需要构建，只需要从 public 移动到最终的dist 即可。
+├── README.md ├── dist --------------------- 构建后的文件， 用于作为插件发布 │ ├── background │ ├── content │ ├── imgs │ ├── manifest.json │ ├── popup │ ├── svelte │ └── vite.svg ├── jsconfig.json ------------ vscode配置文件 ├── manifest.json ------------ 插件配置文件 ├── package-lock.</description>
     </item>
     <item>
       <title>Jsconfig是什么</title>
