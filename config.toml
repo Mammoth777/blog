@@ -2,7 +2,7 @@ baseURL = 'https://mammoth777.github.io/blog/'
 title = "Hoi !"
 paginate = 5
 theme = 'PaperMod'
-author = "Jacob"
+author = "Jachy"
 enableEmoji = true
 languageCode = "en-us"
 
@@ -18,10 +18,10 @@ minifyOutput = true
 
 [params]
 env = "production"
-title = "Jacob's Blog"
+title = "Jachy's Blog"
 description = "人类必须相爱，否则就会灭亡"
 keywords = ["Blog", "Portfolio", "PaperMod"]
-author = "Jacob"
+author = "Jachy"
 images = ["<link or path of image for opengraph, twitter-cards>"]
 DateFormat = "January 2, 2006"
 defaultTheme = "auto"
@@ -50,7 +50,7 @@ tocopen = false
 # safari_pinned_tab = "<link / abs url>"
 
 [params.label]
-text = "Jacob's Blog"
+text = "Jachy's Blog"
 icon = "/apple-touch-icon.png"
 iconHeight = 35
 
