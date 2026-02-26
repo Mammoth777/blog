@@ -19,3 +19,13 @@ draft: false
 ```
 
 3. 新建文件， 使用模板
+
+
+
+注意：
+首次提交可能需要先创建分支, 避免使用 `main` 分支， 频繁触发构建。
+
+```
+git checkout -b obsidian-branch
+git push --set-upstream origin obsidian-branch
+```
