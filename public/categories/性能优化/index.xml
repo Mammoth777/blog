@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>性能优化 on Hoi !</title>
+    <link>http://localhost:1313/blog/categories/%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/</link>
+    <description>Recent content in 性能优化 on Hoi !</description>
+    <image>
+      <title>Hoi !</title>
+      <url>http://localhost:1313/blog/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>http://localhost:1313/blog/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- 0.128.1</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 29 Dec 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/blog/categories/%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Chrome 性能指标详解</title>
+      <link>http://localhost:1313/blog/posts/frontend/chrome-%E6%80%A7%E8%83%BD%E6%8C%87%E6%A0%87%E8%AF%A6%E8%A7%A3/</link>
+      <pubDate>Fri, 29 Dec 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/posts/frontend/chrome-%E6%80%A7%E8%83%BD%E6%8C%87%E6%A0%87%E8%AF%A6%E8%A7%A3/</guid>
+      <description>如何理解 Chrome 性能分析 tab 里的 FP, FCP, DCL, L, LCP FP（First Paint） 意义：指浏览器渲染第一次绘制像素的时间点。 测量方式：从导航开始到浏览器首次绘制任何像素的时间间隔。 FCP（First Contentful Paint） 意义：指浏览器渲染首个页面内容的时间点（例如文本、图像等）。 测量方式：从导航开始到浏览器首次绘制&amp;quot;有意义&amp;quot;的内容的时间间隔。 DCL（DOMContentLoaded） 意义：指页面的 DOM 已完全加载并解析完成的时间点。 测量方式：当页面的 DOM 树构建完成并且所有的资源（如样式表、图像）已经加载完成时，触发 DOMContentLoaded 事件。 L（Load） 意义：指页面的所有资源（包括图片、样式表、脚本等）都已加载完成的时间点。 测量方式：当页面的所有资源都加载完毕时，触发 load 事件。 LCP（Largest Contentful Paint） 意义：指页面上最大且最有意义的内容元素加载完成的时间点。 测量方式：浏览器在页面渲染过程中识别并记录最大的内容元素（例如图片或文本块），并且记录它们加载完成的时间点。 </description>
+    </item>
+  </channel>
+</rss>

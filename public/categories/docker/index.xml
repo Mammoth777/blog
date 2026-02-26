@@ -11,13 +11,39 @@
     </image>
     <generator>Hugo -- 0.128.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 02 Aug 2022 13:30:26 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 24 Mar 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/blog/categories/docker/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>本地知识库搭建指南</title>
+      <link>http://localhost:1313/blog/posts/ai/%E6%9C%AC%E5%9C%B0%E7%9F%A5%E8%AF%86%E5%BA%93%E6%90%AD%E5%BB%BA%E6%8C%87%E5%8D%97/</link>
+      <pubDate>Mon, 24 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/posts/ai/%E6%9C%AC%E5%9C%B0%E7%9F%A5%E8%AF%86%E5%BA%93%E6%90%AD%E5%BB%BA%E6%8C%87%E5%8D%97/</guid>
+      <description>非常简单的知识库搭建方法，只要有 Docker 就行。
+参考：Open WebUI 文档
+快速创建本地知识库问答 1. 启动 Open WebUI 官网指定命令：
+docker run -d -p 3000:8080 -v open-webui:/app/backend/data --name open-webui ghcr.io/open-webui/open-webui:main 实际使用的命令（推荐）：
+docker run -d -p 3000:8080 --add-host=host.docker.internal:host-gateway -v open-webui:/app/backend/data --name open-webui --restart always ghcr.io/open-webui/open-webui:main 启动后，通过 http://localhost:3000 访问 Open WebUI。
+2. 注册登录 没啥说的，注册登录即可。
+3. 配置模型 新建一个工作空间 点击工作空间，可看到模型的配置界面。点击右侧加号，可增加一个模型 选择一个基础模型 选择一个知识库 点击最下面的保存并更新 至此，配置完毕。
+3.1 配置基础模型 配置路径：
+点击左下角管理员头像 → 显示设置弹框 点击管理员设置 → 进入管理员设置界面 点击外部连接 点击管理 OpenAI API 连接 我这里配置的是硅基流动的 api：
+URL: https://api.siliconflow.cn/v1 密钥：在硅基流动管理界面可获得 模型 ID: 即模型名称，复制进输入框，点击加号即可 或者是阿里云的 api，我感觉这个更好用：</description>
+    </item>
+    <item>
+      <title>Docker 国内镜像源</title>
+      <link>http://localhost:1313/blog/posts/devops/docker-%E5%9B%BD%E5%86%85%E9%95%9C%E5%83%8F%E6%BA%90/</link>
+      <pubDate>Mon, 20 Nov 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/posts/devops/docker-%E5%9B%BD%E5%86%85%E9%95%9C%E5%83%8F%E6%BA%90/</guid>
+      <description>国内 Docker 镜像源 # 这个源好用 docker.m.daocloud.io 使用方法 在拉取镜像时替换默认的 Docker Hub 地址：
+# 原始方式 docker pull nginx # 使用镜像源 docker pull docker.m.daocloud.io/nginx 配置 Docker 守护进程 编辑 /etc/docker/daemon.json（Linux）或 Docker Desktop 设置（Mac/Windows）：
+{ &amp;#34;registry-mirrors&amp;#34;: [ &amp;#34;https://docker.m.daocloud.io&amp;#34; ] } 重启 Docker 服务：
+sudo systemctl restart docker </description>
+    </item>
+    <item>
       <title>Docker</title>
-      <link>http://localhost:1313/blog/posts/server/docker/</link>
+      <link>http://localhost:1313/blog/posts/backend/docker/</link>
       <pubDate>Tue, 02 Aug 2022 13:30:26 +0800</pubDate>
-      <guid>http://localhost:1313/blog/posts/server/docker/</guid>
+      <guid>http://localhost:1313/blog/posts/backend/docker/</guid>
       <description>docker</description>
     </item>
   </channel>

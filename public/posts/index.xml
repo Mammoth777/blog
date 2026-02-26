@@ -15,22 +15,58 @@
     <atom:link href="http://localhost:1313/blog/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>在Obsidian中编辑博客</title>
-      <link>http://localhost:1313/blog/posts/general/%E5%9C%A8obsidian%E4%B8%AD%E7%BC%96%E8%BE%91%E5%8D%9A%E5%AE%A2/</link>
+      <link>http://localhost:1313/blog/posts/devops/general/%E5%9C%A8obsidian%E4%B8%AD%E7%BC%96%E8%BE%91%E5%8D%9A%E5%AE%A2/</link>
       <pubDate>Thu, 26 Feb 2026 10:50:32 +0800</pubDate>
-      <guid>http://localhost:1313/blog/posts/general/%E5%9C%A8obsidian%E4%B8%AD%E7%BC%96%E8%BE%91%E5%8D%9A%E5%AE%A2/</guid>
+      <guid>http://localhost:1313/blog/posts/devops/general/%E5%9C%A8obsidian%E4%B8%AD%E7%BC%96%E8%BE%91%E5%8D%9A%E5%AE%A2/</guid>
       <description>一个方便的博客编辑方案
 在完成 [[一个免费博客方案]] 后，我们已经有了一个基于 hugo 的博客。 现在我们要通过 obsidian 获得更好的编辑体验。
-创建一个新仓库，目录为 博客项目中的 content 目录 配置一个模板 &amp;ldquo;hugo-new-file-template&amp;rdquo;, 内容如下： --- title: &amp;#34;{{title}}&amp;#34; date: &amp;#34;{{date:YYYY-MM-DDThh:mm:ss+08:00}}&amp;#34; draft: false --- 新建文件， 使用模板 注意： 首次提交可能需要先创建分支, 避免使用 main 分支， 频繁触发构建。
+创建一个新仓库，目录为 博客项目中的 content 目录 配置一个模板 &amp;ldquo;hugo-new-file-template&amp;rdquo;, 内容如下： --- title: &amp;#34;{{title}}&amp;#34; subtitle: &amp;#34;&amp;#34; date: &amp;#34;{{date:YYYY-MM-DDTHH:mm:ss+08:00}}&amp;#34; categories: [] draft: false --- 新建文件， 使用模板 注意： 首次提交可能需要先创建分支, 避免使用 main 分支， 频繁触发构建。
 git checkout -b obsidian-branch git push --set-upstream origin obsidian-branch 在github 中 通过 pull request 手动触发构建</description>
     </item>
     <item>
+      <title>SQL 基础教程</title>
+      <link>http://localhost:1313/blog/posts/backend/sql%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/</link>
+      <pubDate>Thu, 26 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/posts/backend/sql%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/</guid>
+      <description>主键原则 不使用业务相关的数据作为主键 没有必要的情况下，我们尽量不使用联合主键，因为它给关系表带来了复杂度的上升 外键原则 不用外键约束，用程序逻辑做外键关联 关系 一对多 class 表
+id name 1 class1 2 class2 student 表
+id name class_id 1 zhangsan 1 2 lisi 2 3 wangwu 2 多对多 class 表
+id name 1 class1 2 class2 teacher 表
+id name 1 teacher-Wang 2 teacher-Zhang 3 teacher-Li class_student 表
+id class_id teacher_id 1 1 1 2 1 2 3 2 1 4 2 3 一对一 也可以用一张大表 拆成两张表，可以把不经常查的内容区分开来 索引 定义 索引是关系数据库中对某一列或多个列的值进行预排序的数据结构。</description>
+    </item>
+    <item>
       <title>VeinSight</title>
-      <link>http://localhost:1313/blog/posts/memos/veinsight/</link>
+      <link>http://localhost:1313/blog/posts/solutions/memos/veinsight/</link>
       <pubDate>Thu, 26 Feb 2026 01:45:19 +0800</pubDate>
-      <guid>http://localhost:1313/blog/posts/memos/veinsight/</guid>
+      <guid>http://localhost:1313/blog/posts/solutions/memos/veinsight/</guid>
       <description> vein（纹理 / 脉络）+ sight（看见），像“看见叶脉”；中文可叫「脉见」。
 主要功能
 导出文档 支持 apple notes AI分析 对接本地 ollama </description>
+    </item>
+    <item>
+      <title>免费建站方案</title>
+      <link>http://localhost:1313/blog/posts/solutions/%E5%85%8D%E8%B4%B9%E5%BB%BA%E7%AB%99%E6%96%B9%E6%A1%88/</link>
+      <pubDate>Wed, 25 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/posts/solutions/%E5%85%8D%E8%B4%B9%E5%BB%BA%E7%AB%99%E6%96%B9%E6%A1%88/</guid>
+      <description>全免费建站方案 Next.js 开发 SSG 网站，便于 SEO 基于 Vercel 做自动构建和部署 通过 Notion API 连接 Notion 做新闻/动态信息发布 配置自定义域名 </description>
+    </item>
+    <item>
+      <title>Mac 深度学习环境 MPS</title>
+      <link>http://localhost:1313/blog/posts/ai/mac-%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%8E%AF%E5%A2%83-mps/</link>
+      <pubDate>Tue, 10 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/posts/ai/mac-%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%8E%AF%E5%A2%83-mps/</guid>
+      <description>MPS（Metal Performance Shaders） MPS 是 Apple 的 GPU 加速框架，全称 Metal Performance Shaders。
+这是 Apple 专为 macOS 和 iOS 设计的 GPU 计算框架，让 Mac 用户能够利用 Apple Silicon（M1/M2/M3/M4）或 AMD GPU 进行深度学习训练和推理。
+使用场景 深度学习模型训练 模型推理 GPU 加速计算 优势 利用 Apple Silicon 的 GPU 性能 原生支持 macOS 相比 CPU 训练有显著提升 </description>
+    </item>
+    <item>
+      <title>Opencode AI 助手使用指南</title>
+      <link>http://localhost:1313/blog/posts/ai/opencode-ai-%E5%8A%A9%E6%89%8B%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/</link>
+      <pubDate>Mon, 26 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/posts/ai/opencode-ai-%E5%8A%A9%E6%89%8B%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/</guid>
+      <description>我的基础环境：
+Mac mini 安装步骤 安装 ghostty: opencode 本身设计的文字颜色在深色背景下更好看 安装 opencode 在工作目录配置 opencode.jsonc, 示例如下： { &amp;#34;$schema&amp;#34;: &amp;#34;https://opencode.ai/config.json&amp;#34;, &amp;#34;provider&amp;#34;: { &amp;#34;bailian&amp;#34;: { &amp;#34;name&amp;#34;: &amp;#34;bailian&amp;#34;, &amp;#34;options&amp;#34;: { &amp;#34;baseURL&amp;#34;: &amp;#34;https://dashscope.aliyuncs.com/compatible-mode/v1&amp;#34; }, &amp;#34;models&amp;#34;: { &amp;#34;qwen-flash&amp;#34;: {}, &amp;#34;deepseek-v3.2&amp;#34;: {} } } }, &amp;#34;autoupdate&amp;#34;: true } 打开 ghostty, 输入 opencode, 进入工具 输入 /connect，选择上面我们配置的百炼入口和模型 愉快玩耍 </description>
     </item>
     <item>
       <title>2048</title>
@@ -40,26 +76,96 @@ git checkout -b obsidian-branch git push --set-upstream origin obsidian-branch �
       <description> Go To 2048 </description>
     </item>
     <item>
-      <title>mysql</title>
-      <link>http://localhost:1313/blog/posts/server/mysql/</link>
-      <pubDate>Wed, 20 Nov 2024 01:48:53 +0800</pubDate>
-      <guid>http://localhost:1313/blog/posts/server/mysql/</guid>
-      <description>客户端 1. 登录 mysql -h localhost -P 3306 -u root -p 会提示输入password： 输入密码 2. 创建账号 create user &#39;tester&#39; identified by &#39;123456&#39;
-3. 操作database 展示全部库： show databases; 创建： create database test; 进入库： use test; 4. 操作table 4.1 创建表 create table if not exists student( id int not null auto_increment comment&amp;#39;主键自增id&amp;#39;, name char(10) not null comment&amp;#39;姓名&amp;#39;, addr varchar(100) default &amp;#39;&amp;#39; comment&amp;#39;地址&amp;#39;, primary key(id), unique key idx_name(name), -- 唯一索引 key idx_location(province,city) -- 普通索引， 联合索引 ) Tip: char和varchar的区别： 。。</description>
+      <title>坐标系整理</title>
+      <link>http://localhost:1313/blog/posts/frontend/%E5%9D%90%E6%A0%87%E7%B3%BB%E6%95%B4%E7%90%86/</link>
+      <pubDate>Fri, 22 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/posts/frontend/%E5%9D%90%E6%A0%87%E7%B3%BB%E6%95%B4%E7%90%86/</guid>
+      <description>坐标系定义 坐标系 描述 定义机构 备注 GCJ-02 火星坐标系/国测局坐标系 中华人民共和国国家测绘局（现自然资源部测绘地理信息局） 中国大陆所有互联网地图（如高德、腾讯、百度）都必须使用 GCJ-02 进行加密处理。 BD09 百度坐标系 百度公司 基于 GCJ-02 加密 WGS84 World Geodetic System 1984 美国国防部 国际通用的地球坐标系统，全球定位系统（GPS）采用该坐标系 CGCS2000 中国大地 2000 坐标系 中华人民共和国国家测绘局（现自然资源部测绘地理信息局） 是中国的法定大地坐标系，直接对应于国际高精度坐标系 ITRF，是一种真实物理地理坐标系 graph LR WGS84((WGS84)) CGCS2000((CGCS2000)) GCJ02((GCJ-02)) BD09((BD-09)) WGS84 -- 几乎等同 --&amp;gt; CGCS2000 WGS84 -- 加密转换 --&amp;gt; GCJ02 CGCS2000 -- 加密转换 --&amp;gt; GCJ02 GCJ02 -- 百度加密 --&amp;gt; BD09 底图平台坐标系 平台 坐标系 投影坐标系 百度地图开放平台 BD09 Web Mercator（EPSG:3857） 高德开发平台 GCJ02 Web Mercator（EPSG:3857） 腾讯位置服务 GCJ02 Web Mercator（EPSG:3857） 国家地理信息公共服务平台（天地图） WGS84 / CGCS2000 Web Mercator（EPSG:3857） mapbox WGS84 Web Mercator（EPSG:3857） 工作流程 1.</description>
     </item>
     <item>
-      <title>初试 Nas</title>
-      <link>http://localhost:1313/blog/posts/server/nas/</link>
-      <pubDate>Fri, 18 Oct 2024 09:10:35 +0800</pubDate>
-      <guid>http://localhost:1313/blog/posts/server/nas/</guid>
-      <description>我的nas使用场景 家里的照片视频真的太多了， 手机电脑分分钟爆满(顺便吐槽， 微信还要狂砍几十个G)
-急需一个工具， 能把手机里的照片存起来， 云盘太慢了，而且据说会丢， 好烦， 还是搞块硬盘放家里比较省心。
-当前的nas方案 绿联 DX2600, 是一个两块盘的机器。绿联支持手机和mac应用， 能同步数据。 唯一的吐槽是， 感觉有时候在外面容易连不上， 不知道是我家里网的问题， 还是设备的问题。
-硬盘是希捷4T红盘， 但是最近在下载阿里云盘里的大文件时， 盘搞坏了。 不知道是nas不行还是我的硬盘不行。明明已经是nas专用红盘了， 怎么还坏了呢。 好气
-几经辗转， 终于联系上希捷售后(希捷小程序太难用了)， 可以免费寄回原厂数据恢复。 希望能恢复成功🙏🙏🙏
-后续的方案 等我的希捷硬盘回来， 我就再买一个新的， 两块盘组个 raid1 + 定期同步到云盘， 我就不信还能丢数据
-贴两个硬盘选择的帖子, 可做购买参考
-https://www.backblaze.com/blog/backblaze-drive-stats-for-2023/ https://bbs.nga.cn/read.php?tid=32176201&amp;amp;rand=169 </description>
+      <title>TCP/IP 四层模型详解</title>
+      <link>http://localhost:1313/blog/posts/backend/tcp-ip-%E5%9B%9B%E5%B1%82%E6%A8%A1%E5%9E%8B%E8%AF%A6%E8%A7%A3/</link>
+      <pubDate>Mon, 07 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/posts/backend/tcp-ip-%E5%9B%9B%E5%B1%82%E6%A8%A1%E5%9E%8B%E8%AF%A6%E8%A7%A3/</guid>
+      <description>TCP/IP 模型是互联网的基础协议模型，它将网络通信分为四个层次，每个层次负责特定的功能。从下到上依次为：
+1. 链路层（Link Layer） 功能：负责在物理介质上传输数据帧。
+任务：与 OSI 模型中的物理层和数据链路层相对应，负责将数据封装成帧，并进行错误检测和纠正。
+示例：以太网、无线局域网。
+常用命令 命令 用途 示例 ifconfig 或 ip 查看和配置网络接口 ifconfig 或 ip addr show arp 查看和管理 ARP 表 arp -a ethtool 查看和设置以太网设备参数 ethtool eth0 2. 网络层（Internet Layer） 功能：负责将数据包从源节点传输到目标节点。
+任务：提供逻辑地址（如 IP 地址），实现数据包的分段和重组。
+示例：IP 协议。
+常用命令 命令 用途 示例 ping 测试主机之间的连通性 ping 8.8.8.8 traceroute 或 tracepath 显示数据包到达目标主机的路径 traceroute 8.8.8.8 route 或 netstat -r 查看和管理路由表 route -n 或 netstat -nr 3. 传输层（Transport Layer） 功能：负责端到端的可靠数据传输。</description>
+    </item>
+    <item>
+      <title>Mapbox GL 图层分类详解</title>
+      <link>http://localhost:1313/blog/posts/frontend/mapbox-gl-%E5%9B%BE%E5%B1%82%E5%88%86%E7%B1%BB%E8%AF%A6%E8%A7%A3/</link>
+      <pubDate>Mon, 23 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/posts/frontend/mapbox-gl-%E5%9B%BE%E5%B1%82%E5%88%86%E7%B1%BB%E8%AF%A6%E8%A7%A3/</guid>
+      <description>Layer 图层分类 Mapbox GL 提供了多种图层类型用于地图渲染：
+图层类型 用途说明 background 用于地图背景 fill 适合用于渲染区域 line 适合用于渲染线条 symbol 用于显示符号和文本 raster 适用于显示栅格影像 raster-particle 适用于显示栅格粒子效果 circle 适合用于显示点数据 fill-extrusion 用于 3D 建筑物渲染 hillshade 用于 3D 地形渲染 heatmap 用于显示点的密度分布 sky 增强 3D 场景的天空效果 model 增强 3D 场景的沉浸感 Expression 表达式 1. 数据操作符 Data Expressions 用于获取要素数据相关的信息：
+get - 获取属性值 has - 检查属性是否存在 id - 获取要素 ID geometry-type - 获取几何类型 properties - 获取属性对象 feature-state - 获取要素状态 2. 相机操作符 Camera Expressions zoom - 获取当前缩放级别 3.</description>
+    </item>
+    <item>
+      <title>MCP 协议入门</title>
+      <link>http://localhost:1313/blog/posts/ai/mcp-%E5%8D%8F%E8%AE%AE%E5%85%A5%E9%97%A8/</link>
+      <pubDate>Tue, 20 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/posts/ai/mcp-%E5%8D%8F%E8%AE%AE%E5%85%A5%E9%97%A8/</guid>
+      <description>![MCP 使用流程](pics/MCP 使用流程理解.excalidraw.png)
+重要参考：MCP 中文入门指南
+什么是 MCP MCP（Model Context Protocol）是一种用于 AI 模型与外部工具/数据源通信的协议标准。
+调试 MCP Server 使用官方提供的 inspector 工具调试 MCP server：
+npx -y @modelcontextprotocol/inspector &amp;lt;command&amp;gt; &amp;lt;arg1&amp;gt; &amp;lt;arg2&amp;gt; 使用场景 连接 AI 助手到本地文件系统 访问数据库 调用外部 API 执行命令行工具 </description>
+    </item>
+    <item>
+      <title>本地知识库搭建指南</title>
+      <link>http://localhost:1313/blog/posts/ai/%E6%9C%AC%E5%9C%B0%E7%9F%A5%E8%AF%86%E5%BA%93%E6%90%AD%E5%BB%BA%E6%8C%87%E5%8D%97/</link>
+      <pubDate>Mon, 24 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/posts/ai/%E6%9C%AC%E5%9C%B0%E7%9F%A5%E8%AF%86%E5%BA%93%E6%90%AD%E5%BB%BA%E6%8C%87%E5%8D%97/</guid>
+      <description>非常简单的知识库搭建方法，只要有 Docker 就行。
+参考：Open WebUI 文档
+快速创建本地知识库问答 1. 启动 Open WebUI 官网指定命令：
+docker run -d -p 3000:8080 -v open-webui:/app/backend/data --name open-webui ghcr.io/open-webui/open-webui:main 实际使用的命令（推荐）：
+docker run -d -p 3000:8080 --add-host=host.docker.internal:host-gateway -v open-webui:/app/backend/data --name open-webui --restart always ghcr.io/open-webui/open-webui:main 启动后，通过 http://localhost:3000 访问 Open WebUI。
+2. 注册登录 没啥说的，注册登录即可。
+3. 配置模型 新建一个工作空间 点击工作空间，可看到模型的配置界面。点击右侧加号，可增加一个模型 选择一个基础模型 选择一个知识库 点击最下面的保存并更新 至此，配置完毕。
+3.1 配置基础模型 配置路径：
+点击左下角管理员头像 → 显示设置弹框 点击管理员设置 → 进入管理员设置界面 点击外部连接 点击管理 OpenAI API 连接 我这里配置的是硅基流动的 api：
+URL: https://api.siliconflow.cn/v1 密钥：在硅基流动管理界面可获得 模型 ID: 即模型名称，复制进输入框，点击加号即可 或者是阿里云的 api，我感觉这个更好用：</description>
+    </item>
+    <item>
+      <title>深度学习训练指标详解</title>
+      <link>http://localhost:1313/blog/posts/ai/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E8%AE%AD%E7%BB%83%E6%8C%87%E6%A0%87%E8%AF%A6%E8%A7%A3/</link>
+      <pubDate>Fri, 24 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/posts/ai/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E8%AE%AD%E7%BB%83%E6%8C%87%E6%A0%87%E8%AF%A6%E8%A7%A3/</guid>
+      <description>指标定义与作用 指标 定义 作用 Loss 模型在训练集上的损失值，表示预测值与真实值之间的差异 用于优化模型参数，反映模型在训练数据上的拟合程度 Accuracy 模型在训练集上的准确率，表示预测正确的样本数占总样本数的比例 直观反映模型在训练数据上的分类性能 val_loss 模型在验证集上的损失值，表示模型在未见数据上的预测误差 评估模型的泛化能力，判断是否过拟合或欠拟合 val_acc 模型在验证集上的准确率，表示模型在未见数据上的分类性能 评估模型在未见数据上的表现，是选择最终模型的重要依据 指标变化趋势与含义 指标变化趋势 含义 Loss 下降，Accuracy 上升 模型在训练集上表现良好，正在逐步拟合数据 val_loss 下降，val_acc 上升 模型在验证集上表现良好，泛化能力较强 Loss 下降，val_loss 上升 模型可能过拟合训练数据，泛化能力下降 Loss 和 val_loss 都较高 模型可能欠拟合，未能充分学习数据特征 Loss 和 val_loss 都较低且稳定 模型已经收敛，表现良好 Accuracy 和 val_acc 都较高且稳定 模型在训练集和验证集上都具有较高的分类性能 过拟合与欠拟合的判断 现象 Loss Accuracy val_loss val_acc 结论 过拟合 很低 很高 较高 较低 模型过拟合 欠拟合 较高 较低 较高 较低 模型欠拟合 理想情况 较低 较高 较低 较高 模型表现良好 实际应用中的优化策略 问题 可能原因 优化策略 Loss 下降缓慢 学习率过高或过低，模型复杂度不足 调整学习率，增加模型复杂度（如增加网络层数或神经元数量） val_loss 上升，val_acc 下降 模型过拟合 使用正则化（如 L2 正则化、Dropout），增加数据增强，或采用早停策略 Loss 和 val_loss 都较高 模型欠拟合 增加模型复杂度，延长训练时间，或调整学习率 Accuracy 和 val_acc 差距较大 模型过拟合或数据分布不一致 检查数据分布，增加正则化，或使用更复杂的模型 Loss 和 Accuracy 的对比 特性 Loss Accuracy 类型 连续值 离散值 范围 无固定范围 0 到 1（或 0% 到 100%） 优化目标 直接优化目标 间接优化目标 适用场景 回归任务、分类任务 分类任务 对类别不平衡的敏感性 较低（取决于 Loss 函数） 较高（可能失真） 通过这些表格，您可以快速理解 Loss、Accuracy、val_loss 和 val_acc 的含义、作用以及它们之间的关系，并掌握如何根据这些指标的变化趋势来调试和优化模型。</description>
+    </item>
+    <item>
+      <title>问答对话模型基础</title>
+      <link>http://localhost:1313/blog/posts/ai/%E9%97%AE%E7%AD%94%E5%AF%B9%E8%AF%9D%E6%A8%A1%E5%9E%8B%E5%9F%BA%E7%A1%80/</link>
+      <pubDate>Mon, 20 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/posts/ai/%E9%97%AE%E7%AD%94%E5%AF%B9%E8%AF%9D%E6%A8%A1%E5%9E%8B%E5%9F%BA%E7%A1%80/</guid>
+      <description>传统方式 关键词匹配 最基础的问答匹配方式。
+BM25 算法 经典的文本相关性评分算法。
+语义分析 LSA（Latent Semantic Analysis） 潜在语义分析，通过奇异值分解（SVD）发现词语之间的潜在关系。
+PLSA（Probabilistic Latent Semantic Analysis） 概率潜在语义分析，基于概率模型的语义分析方法。
+LDA（Latent Dirichlet Allocation） 潜在狄利克雷分配，经典的主题模型算法。
+基于神经网络的文本匹配 Word2vec 词向量表示方法，将词语映射为低维稠密向量。
+参考 掘金：文本匹配计算 </description>
+    </item>
+    <item>
+      <title>Git 提交规范</title>
+      <link>http://localhost:1313/blog/posts/devops/git-%E6%8F%90%E4%BA%A4%E8%A7%84%E8%8C%83/</link>
+      <pubDate>Tue, 17 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/posts/devops/git-%E6%8F%90%E4%BA%A4%E8%A7%84%E8%8C%83/</guid>
+      <description> Type Description feat 修补代码库中的错误（与语义化版本控制中的 PATCH 相对应） fix 向代码库中引入新功能（与语义化版本控制中的 MINOR 相对应) build 构建系统或外部依赖项的更改 chore 对代码库或测试的辅助更改 ci 对 CI 配置文件或脚本的更改 docs 对文档的更改 perf 与性能有关的更改 refactor 代码重构，既不修复错误也不添加功能 revert 撤消先前的提交 style 与代码样式有关的更改 test 对测试的更改 </description>
+    </item>
+    <item>
+      <title>mysql</title>
+      <link>http://localhost:1313/blog/posts/backend/mysql/</link>
+      <pubDate>Wed, 20 Nov 2024 01:48:53 +0800</pubDate>
+      <guid>http://localhost:1313/blog/posts/backend/mysql/</guid>
+      <description>客户端 1. 登录 mysql -h localhost -P 3306 -u root -p 会提示输入password： 输入密码 2. 创建账号 create user &#39;tester&#39; identified by &#39;123456&#39;
+3. 操作database 展示全部库： show databases; 创建： create database test; 进入库： use test; 4. 操作table 4.1 创建表 create table if not exists student( id int not null auto_increment comment&amp;#39;主键自增id&amp;#39;, name char(10) not null comment&amp;#39;姓名&amp;#39;, addr varchar(100) default &amp;#39;&amp;#39; comment&amp;#39;地址&amp;#39;, primary key(id), unique key idx_name(name), -- 唯一索引 key idx_location(province,city) -- 普通索引， 联合索引 ) Tip: char和varchar的区别： 。。</description>
     </item>
     <item>
       <title>基于svelte的浏览器插件方案</title>
@@ -76,16 +182,16 @@ https://www.backblaze.com/blog/backblaze-drive-stats-for-2023/ https://bbs.nga.c
     </item>
     <item>
       <title>Jsconfig是什么</title>
-      <link>http://localhost:1313/blog/posts/jsconfig%E6%98%AF%E4%BB%80%E4%B9%88/</link>
+      <link>http://localhost:1313/blog/posts/frontend/jsconfig%E6%98%AF%E4%BB%80%E4%B9%88/</link>
       <pubDate>Wed, 17 Jul 2024 08:45:19 +0800</pubDate>
-      <guid>http://localhost:1313/blog/posts/jsconfig%E6%98%AF%E4%BB%80%E4%B9%88/</guid>
+      <guid>http://localhost:1313/blog/posts/frontend/jsconfig%E6%98%AF%E4%BB%80%E4%B9%88/</guid>
       <description></description>
     </item>
     <item>
       <title>一个免费的博客方案</title>
-      <link>http://localhost:1313/blog/posts/general/%E4%B8%80%E4%B8%AA%E5%85%8D%E8%B4%B9%E5%8D%9A%E5%AE%A2%E6%96%B9%E6%A1%88/</link>
+      <link>http://localhost:1313/blog/posts/devops/general/%E4%B8%80%E4%B8%AA%E5%85%8D%E8%B4%B9%E5%8D%9A%E5%AE%A2%E6%96%B9%E6%A1%88/</link>
       <pubDate>Thu, 04 Jul 2024 08:27:09 +0800</pubDate>
-      <guid>http://localhost:1313/blog/posts/general/%E4%B8%80%E4%B8%AA%E5%85%8D%E8%B4%B9%E5%8D%9A%E5%AE%A2%E6%96%B9%E6%A1%88/</guid>
+      <guid>http://localhost:1313/blog/posts/devops/general/%E4%B8%80%E4%B8%AA%E5%85%8D%E8%B4%B9%E5%8D%9A%E5%AE%A2%E6%96%B9%E6%A1%88/</guid>
       <description>发布一个博客， 总共分几步？ 三步。创建博客站点，写博客，发出去。
 博客站点就像是一个空壳博客，存在于我们的电脑上 我们需要在这个站点中写文章 写完了不能只有自己看呀， 就需要发布到网上 下面， 把这三步具像化一点～～
 1. 【创建博客站点】：通过Hugo生成站点 Hugo 是一个静态网站生成器， 我们需要用它制作一个站点。
@@ -94,6 +200,13 @@ https://www.backblaze.com/blog/backblaze-drive-stats-for-2023/ https://bbs.nga.c
 winget install Hugo.Hugo.Extended (待验证)
 1.1.2 MacOS 安装：brew install hugo 验证： hugo version 看到输出类似这样的版本， 则表示成功： hugo v0.128.1+extended darwin/arm64 BuildDate=2024-07-02T06:46:41Z VendorInfo=brew
 1.2 初始化站点 hugo new site test # 新建一个站点 cd test # 进入站点目录 git init # 初始化git git submodule add https://github.com/theNewDynamic/gohugo-theme-ananke.git themes/ananke # 添加主题 echo &amp;#34;theme = &amp;#39;ananke&amp;#39;&amp;#34; &amp;gt;&amp;gt; hugo.</description>
+    </item>
+    <item>
+      <title>Cron 定时任务详解</title>
+      <link>http://localhost:1313/blog/posts/backend/cron-%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A1%E8%AF%A6%E8%A7%A3/</link>
+      <pubDate>Sat, 11 May 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/posts/backend/cron-%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A1%E8%AF%A6%E8%A7%A3/</guid>
+      <description>Cron 表达式格式 * * * * * * - - - - - - | | | | | | | | | | | +----- day of week (0 - 6) (Sunday=0 or 7) | | | | +------- month (1 - 12) | | | +--------- day of month (1 - 31) | | +----------- hour (0 - 23) | +------------- minute (0 - 59) +--------------- second (0 - 59) 字段说明 位置 字段 范围 1 秒 0 - 59 2 分 0 - 59 3 时 0 - 23 4 日 1 - 31 5 月 1 - 12 或 JAN-DEC 6 星期 0 - 6 或 SUN-SAT（0 和 7 都代表星期天） 7 年（可选） 留空或 1970 - 2099 特殊字符 字符 说明 * 表示任何时间，或者任何值 - 表示一个范围 , 表示一个列表中的值或值范围的分隔符 / 表示起始时间开始触发，然后每隔固定时间触发一次 示例 表达式 说明 0 0 12 * * 每天的中午 12 点触发 15 10 * * * 每天的上午 10 点 15 触发 0 0/5 14 * * 每天的 14 点开始，每 5 分钟触发一次，直到 14:55 0 0 1,15 * * 每月的 1 日和 15 日的午夜 12 点触发 0 0 1 * * sun 每个星期天的午夜 12 点触发 Cron 表达式非常灵活，可以用来创建各种复杂的时间调度规则。</description>
     </item>
     <item>
       <title>浏览器事件循环-微任务和宏任务，调用栈，渲染队列：布局，绘制与合成</title>
@@ -108,10 +221,40 @@ while (true) { if (execQueue.isNotEmpty()) { execQueue.pop().exec(); } } 在老�
 script 标签 延迟任务： setTimeout, setInterval, requestIdleCallback 浏览器的事件处理API: click， mousedown, input, blur 等等。 有一些事件是用户初始化的，比如点击事件， tab切换这种 有的事件是来自于代码， 比如 ajax 的响应啥的 promise 状态变化； （关于promise， 可以看这个文章, emmm这篇文章是我准备留给2月份翻译的） DOMMutationObserver, IntersectionObserver 这种 Observer 家族的 RequestAnimationFrame Almost everything we described above is planned through WebAPI (or browserAPI).</description>
     </item>
     <item>
+      <title>RxJS 响应式编程入门</title>
+      <link>http://localhost:1313/blog/posts/frontend/rxjs-%E5%93%8D%E5%BA%94%E5%BC%8F%E7%BC%96%E7%A8%8B%E5%85%A5%E9%97%A8/</link>
+      <pubDate>Thu, 11 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/posts/frontend/rxjs-%E5%93%8D%E5%BA%94%E5%BC%8F%E7%BC%96%E7%A8%8B%E5%85%A5%E9%97%A8/</guid>
+      <description>为什么需要 Observable RxJS 说是弥补关于数据处理场景的一块空白 → 推送多个数据。
+这里把我们对数据的处理方式做了两个维度的分类：
+Type SINGLE MULTIPLE Pull Function Iterator Push Promise Observable Pull 和 Push Pull 就是我要的时候，就能要到。生产者无感。
+每个 JS 函数都是在 Pull ES2015 的生成器（function*）弥补了&amp;quot;拉取多个值&amp;quot;的空白 Push 就是我决定啥时候给，消费者无感。
+典型例子就是 Promise，等 then 的时候自然会 push 给你 从生产者和消费者的角度理解：
+生产者 消费者 Pull 被动：等着要数据的时候再产生数据 主动：会决定啥时候去要数据 Push 主动：按照自己的节奏产生数据，然后推出去 被动：就等着数据（等回调） 代码示例 1. 拉取单个数据
+function getNum() { return Math.floor(Math.random() * 10) } function singlePull() { const num = getNum() console.log(num, &amp;#39;singlePull&amp;#39;) } 2. 推送单个数据
+function getNumPromise() { return new Promise((resolve, reject) =&amp;gt; { setTimeout(() =&amp;gt; { resolve(getNum()) }, 1000) }) } function singlePush() { const promise = getNumPromise() promise.</description>
+    </item>
+    <item>
+      <title>Chrome 性能指标详解</title>
+      <link>http://localhost:1313/blog/posts/frontend/chrome-%E6%80%A7%E8%83%BD%E6%8C%87%E6%A0%87%E8%AF%A6%E8%A7%A3/</link>
+      <pubDate>Fri, 29 Dec 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/posts/frontend/chrome-%E6%80%A7%E8%83%BD%E6%8C%87%E6%A0%87%E8%AF%A6%E8%A7%A3/</guid>
+      <description>如何理解 Chrome 性能分析 tab 里的 FP, FCP, DCL, L, LCP FP（First Paint） 意义：指浏览器渲染第一次绘制像素的时间点。 测量方式：从导航开始到浏览器首次绘制任何像素的时间间隔。 FCP（First Contentful Paint） 意义：指浏览器渲染首个页面内容的时间点（例如文本、图像等）。 测量方式：从导航开始到浏览器首次绘制&amp;quot;有意义&amp;quot;的内容的时间间隔。 DCL（DOMContentLoaded） 意义：指页面的 DOM 已完全加载并解析完成的时间点。 测量方式：当页面的 DOM 树构建完成并且所有的资源（如样式表、图像）已经加载完成时，触发 DOMContentLoaded 事件。 L（Load） 意义：指页面的所有资源（包括图片、样式表、脚本等）都已加载完成的时间点。 测量方式：当页面的所有资源都加载完毕时，触发 load 事件。 LCP（Largest Contentful Paint） 意义：指页面上最大且最有意义的内容元素加载完成的时间点。 测量方式：浏览器在页面渲染过程中识别并记录最大的内容元素（例如图片或文本块），并且记录它们加载完成的时间点。 </description>
+    </item>
+    <item>
+      <title>redis</title>
+      <link>http://localhost:1313/blog/posts/backend/redis/</link>
+      <pubDate>Mon, 20 Nov 2023 14:29:42 +0800</pubDate>
+      <guid>http://localhost:1313/blog/posts/backend/redis/</guid>
+      <description>客户端启动 redis-cli
+redis-cli ping &amp;gt; PONG 远程: redis-cli -h host -p -a password
+Key相关 set key value del key dump key序列化, 返回被序列化的值 exists key expire key设置过期时间, 到期删除 `` </description>
+    </item>
+    <item>
       <title>rabbitmq</title>
-      <link>http://localhost:1313/blog/posts/server/rabbitmq/</link>
+      <link>http://localhost:1313/blog/posts/backend/rabbitmq/</link>
       <pubDate>Mon, 20 Nov 2023 14:28:43 +0800</pubDate>
-      <guid>http://localhost:1313/blog/posts/server/rabbitmq/</guid>
+      <guid>http://localhost:1313/blog/posts/backend/rabbitmq/</guid>
       <description>基本概念 Server(Broker): 接收客户端连接， 实现AMPQ的实体服务
 Connection: 连接， 客户端和Server的网络连接
 Channel: 网络信道。消息读写的通道。每个channel代表一个会话任务
@@ -139,10 +282,76 @@ Topic：队列通过路由键绑定到交换机上，然后，交换机根据消
 “*” : 匹配一个词</description>
     </item>
     <item>
+      <title>Docker 国内镜像源</title>
+      <link>http://localhost:1313/blog/posts/devops/docker-%E5%9B%BD%E5%86%85%E9%95%9C%E5%83%8F%E6%BA%90/</link>
+      <pubDate>Mon, 20 Nov 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/posts/devops/docker-%E5%9B%BD%E5%86%85%E9%95%9C%E5%83%8F%E6%BA%90/</guid>
+      <description>国内 Docker 镜像源 # 这个源好用 docker.m.daocloud.io 使用方法 在拉取镜像时替换默认的 Docker Hub 地址：
+# 原始方式 docker pull nginx # 使用镜像源 docker pull docker.m.daocloud.io/nginx 配置 Docker 守护进程 编辑 /etc/docker/daemon.json（Linux）或 Docker Desktop 设置（Mac/Windows）：
+{ &amp;#34;registry-mirrors&amp;#34;: [ &amp;#34;https://docker.m.daocloud.io&amp;#34; ] } 重启 Docker 服务：
+sudo systemctl restart docker </description>
+    </item>
+    <item>
+      <title>Git 踩坑记录</title>
+      <link>http://localhost:1313/blog/posts/troubleshooting/git-%E5%92%8C%E6%B5%8F%E8%A7%88%E5%99%A8%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/</link>
+      <pubDate>Mon, 20 Nov 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/posts/troubleshooting/git-%E5%92%8C%E6%B5%8F%E8%A7%88%E5%99%A8%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/</guid>
+      <description>问题：修改文件名大小写，Git 不敏感 问题描述 当修改项目某文件名的大小写时，git status 是不会查看到此文件有改动的。
+解决方案 使用 git mv 命令进行两次重命名：
+git mv foldername tempname &amp;amp;&amp;amp; git mv tempname FolderName 参考 CSDN: Git 修改文件名大小写 问题：Chrome 访问非受信证书页面提示错误 问题描述 访问非受信证书页面时，提示「您的连接不是私密连接」错误。
+解决方案 在当前页面直接键盘输入：
+thisisunsafe 打完立刻就好了。
+参考 腾讯云开发者社区 问题：Mac 浏览器连接已重置 问题描述 Mac 上浏览器访问某些网站时提示连接已重置。
+解决方案 刷新 DNS 缓存：
+sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder 问题：node 版本管理工具 n 下载 node 慢 问题描述 使用 n 工具安装 node 版本时，下载速度很慢。
+解决方案 切换镜像源，并设置环境变量：
+# 设置环境变量 export N_NODE_MIRROR=https://npm.taobao.org/mirrors/node # 安装 sudo -E n stable 参考 墨天轮社区 问题：内容相同，MD5 竟然不一样 问题描述 两个文件内容完全相同，但计算出的 MD5 值却不一样。</description>
+    </item>
+    <item>
+      <title>Makefile 入门</title>
+      <link>http://localhost:1313/blog/posts/backend/makefile-%E5%85%A5%E9%97%A8/</link>
+      <pubDate>Mon, 20 Nov 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/posts/backend/makefile-%E5%85%A5%E9%97%A8/</guid>
+      <description>基本语法 声明变量：xxx=xxx
+声明命令：xxx:
+不输出：前面加个 @
+示例 VERSION=0.0.1 install: ## 安装依赖 go mod tidy installSlient: ## 安装依赖，不输出 @go mod tidy list: ## 显示全部依赖 go list -m all local-list: ## 显示本地依赖 go list cmdb/... ver: ## 打印版本 echo $(VERSION) 常用技巧 使用 ## 添加注释 使用 $(变量名) 引用变量 使用 @ 静音执行命令 </description>
+    </item>
+    <item>
+      <title>NAS 存储搭建指南</title>
+      <link>http://localhost:1313/blog/posts/hardware/nas-%E5%AD%98%E5%82%A8%E6%90%AD%E5%BB%BA%E6%8C%87%E5%8D%97/</link>
+      <pubDate>Mon, 20 Nov 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/posts/hardware/nas-%E5%AD%98%E5%82%A8%E6%90%AD%E5%BB%BA%E6%8C%87%E5%8D%97/</guid>
+      <description> NAS（Network Attached Storage：网络附属存储）按字面简单说就是连接在网络上，具备资料存储功能的装置，因此也称为&amp;quot;网络存储器&amp;quot;
+意义 笔记同步 (obsidian) 照片存档，释放 PC/手机存储空间 家庭影院 公司数据备份 相关概念 RAID(磁盘阵列) RAID0(条带化): 不冗余存储，并行读写多块硬盘。(主打读写速度) RAID1(镜像): 把数据同时存储到两块硬盘上。(极端安全) RAID 5: RAID 5 使用分布式数据校验来提供冗余性和性能。数据和校验信息被分布在多个硬盘上，如果一个硬盘失败，数据可以从校验信息中重建。RAID 5 通常需要至少三个硬盘驱动器。 RAID 6: RAID 6 类似于 RAID 5，但提供更高的冗余性。它使用两个独立的校验信息块，允许在两个硬盘同时失败时仍然保持数据的完整性。 RAID 10（1+0）: RAID 10 结合了 RAID 1 和 RAID 0 的优点。它将数据复制到多个硬盘上（镜像），然后将这些镜像条带化。RAID 10 提供了较高的性能和冗余性，但需要更多的硬盘。 </description>
+    </item>
+    <item>
+      <title>加密算法入门</title>
+      <link>http://localhost:1313/blog/posts/backend/%E5%8A%A0%E5%AF%86%E7%AE%97%E6%B3%95%E5%85%A5%E9%97%A8/</link>
+      <pubDate>Mon, 20 Nov 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/posts/backend/%E5%8A%A0%E5%AF%86%E7%AE%97%E6%B3%95%E5%85%A5%E9%97%A8/</guid>
+      <description>目录 对称加密 非对称加密 哈希算法 对称加密 特点：
+加密过程每一步可逆 加密/解密用同一组密钥 异或是最简单的对称加密算法 异或运算：按位异或运算符 ^ 是双目运算符。其功能是参与运算的两数各对应的二进位相异或，当两对应的二进位相异时，结果为 1。
+如：
+var a, key = 2, 1 var b = a ^ key fmt.Printf(&amp;#34;a: %b, key: %b, b: %b\n&amp;#34;, a, key, b) // a: 10, key: 01, b: 11 DES 数据加密标准 DES（Data Encryption Standard）数据加密标准，是目前最为流行的加密算法之一，密钥是 64 位。
+对原始数据（明文）进行分组，每组 64 位，最后一组不足 64 位时，按一定规则补充 对每组进行 DES 运算 AES 加密方式 AES（Advanced Encryption Standard）高级加密标准，旨在取代 DES。
+非对称加密 特点：
+使用公钥加密，使用私钥解密 公钥和私钥不同 公钥可以公布给所有人 私钥只有自己保存 相比于对称加密，运算速度非常慢 RSA 加密方式 RSA 三个字母取自三个创始人名字。</description>
+    </item>
+    <item>
+      <title>绿联 NAS 使用心得</title>
+      <link>http://localhost:1313/blog/posts/hardware/%E7%BB%BF%E8%81%94-nas-%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/</link>
+      <pubDate>Mon, 20 Nov 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/posts/hardware/%E7%BB%BF%E8%81%94-nas-%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/</guid>
+      <description> 待研究
+参考：什么值得买：绿联 NAS 使用体验
+待补充内容 绿联 DX2600 使用体验 同步到云盘方案 手机和 Mac 应用使用感受 </description>
+    </item>
+    <item>
       <title>minio</title>
-      <link>http://localhost:1313/blog/posts/server/minio/</link>
+      <link>http://localhost:1313/blog/posts/backend/minio/</link>
       <pubDate>Mon, 20 Nov 2023 06:32:24 +0800</pubDate>
-      <guid>http://localhost:1313/blog/posts/server/minio/</guid>
+      <guid>http://localhost:1313/blog/posts/backend/minio/</guid>
       <description>对于中小企业, 如果不选择存储上云, 那么Minio是不错的选择.
 minio可以直接作为对象存储使用, 也可以作为云上对象存储服务的网关层. 无缝对接到Amazon S3, MicroSoft Azure.
 优点 部署简单 支持海量存储, 单个对象最大5Tb 兼容Amazon S3接口 低冗余切磁盘损坏高容忍 读写性能好 基本概念 Object: 存储到minio的基本对象, 就是文件 Bucket: 用来存储Object的逻辑空间. 每个Bucket之间的数据相互隔离. 对于客户端来说, 是存放文件的顶层文件夹 Drive: 存储数据的磁盘, 在Minio启动时, 以参数的方式传入. Minio中的所有对象都会存储在drive中 Set: 一组Drive的集合. 分布式部署根据集群规模自动划分一个或多个Set, 每个Set中Drive分布在不同位置. 一个对象存储在一个Set上 参考: https://xie.infoq.cn/article/66ffc331f851f5873a3e1b2d3
@@ -151,40 +360,47 @@ docker run -p 9000:9000 -p 9001:9001 quay.io/minio/minio server /data --console-
     </item>
     <item>
       <title>Test</title>
-      <link>http://localhost:1313/blog/posts/memos/test/</link>
+      <link>http://localhost:1313/blog/posts/solutions/memos/test/</link>
       <pubDate>Fri, 12 Aug 2022 11:33:22 +0800</pubDate>
-      <guid>http://localhost:1313/blog/posts/memos/test/</guid>
+      <guid>http://localhost:1313/blog/posts/solutions/memos/test/</guid>
       <description>ssss</description>
     </item>
     <item>
       <title>Go 使用 grpc</title>
-      <link>http://localhost:1313/blog/posts/golang/grpc-go/</link>
+      <link>http://localhost:1313/blog/posts/backend/golang/grpc-go/</link>
       <pubDate>Fri, 12 Aug 2022 11:15:14 +0800</pubDate>
-      <guid>http://localhost:1313/blog/posts/golang/grpc-go/</guid>
+      <guid>http://localhost:1313/blog/posts/backend/golang/grpc-go/</guid>
       <description>快速开始 安装proto-gen-go-grpc插件 go install google.golang.org/grpc/cmd/protoc-gen-go-grpc@latest 来看看版本
 protoc-gen-go-grpc --version protoc-gen-go-grpc 1.1.0 编写proto文件 syntax = &amp;#34;proto3&amp;#34;; package hw; option go_package=&amp;#34;./hello&amp;#34;; // 告诉protoc生成的文件的包名 service Greeter { rpc SayHello (HelloRequest) returns (HelloReply) {} } message HelloRequest { string name = 1; } message HelloReply { string name = 1; } 生成代码 protoc -I=. --go_out=./grpc/service --go-grpc_out=./grpc/service ./grpc/service/hello/helloworld.proto 说明：
 go_out: 生成后的*.pb.go文件位置 go-grpc_out: 生成后的*_grpc.pb.go文件位置 -I: 即-IPATH或--proto_path=PATH， 指定搜索路径参数，表示我们在那个路径下搜索.proto文件 </description>
     </item>
     <item>
       <title>BB</title>
-      <link>http://localhost:1313/blog/posts/memos/idx/</link>
+      <link>http://localhost:1313/blog/posts/solutions/memos/idx/</link>
       <pubDate>Wed, 03 Aug 2022 23:06:30 +0800</pubDate>
-      <guid>http://localhost:1313/blog/posts/memos/idx/</guid>
+      <guid>http://localhost:1313/blog/posts/solutions/memos/idx/</guid>
       <description>my first bb 我的第一篇随笔</description>
     </item>
     <item>
       <title>General</title>
-      <link>http://localhost:1313/blog/posts/general/idx/</link>
+      <link>http://localhost:1313/blog/posts/devops/general/idx/</link>
       <pubDate>Wed, 03 Aug 2022 22:55:03 +0800</pubDate>
-      <guid>http://localhost:1313/blog/posts/general/idx/</guid>
+      <guid>http://localhost:1313/blog/posts/devops/general/idx/</guid>
       <description>通用技能</description>
     </item>
     <item>
       <title>Docker</title>
-      <link>http://localhost:1313/blog/posts/server/docker/</link>
+      <link>http://localhost:1313/blog/posts/backend/docker/</link>
       <pubDate>Tue, 02 Aug 2022 13:30:26 +0800</pubDate>
-      <guid>http://localhost:1313/blog/posts/server/docker/</guid>
+      <guid>http://localhost:1313/blog/posts/backend/docker/</guid>
       <description>docker</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/blog/posts/backend/oauth2.0-%E6%8E%88%E6%9D%83%E6%9C%BA%E5%88%B6%E8%AF%A6%E8%A7%A3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/posts/backend/oauth2.0-%E6%8E%88%E6%9D%83%E6%9C%BA%E5%88%B6%E8%AF%A6%E8%A7%A3/</guid>
+      <description></description>
     </item>
   </channel>
 </rss>

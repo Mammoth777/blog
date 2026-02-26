@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>安全 on Hoi !</title>
+    <link>http://localhost:1313/blog/categories/%E5%AE%89%E5%85%A8/</link>
+    <description>Recent content in 安全 on Hoi !</description>
+    <image>
+      <title>Hoi !</title>
+      <url>http://localhost:1313/blog/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>http://localhost:1313/blog/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- 0.128.1</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 20 Nov 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/blog/categories/%E5%AE%89%E5%85%A8/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>加密算法入门</title>
+      <link>http://localhost:1313/blog/posts/backend/%E5%8A%A0%E5%AF%86%E7%AE%97%E6%B3%95%E5%85%A5%E9%97%A8/</link>
+      <pubDate>Mon, 20 Nov 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/posts/backend/%E5%8A%A0%E5%AF%86%E7%AE%97%E6%B3%95%E5%85%A5%E9%97%A8/</guid>
+      <description>目录 对称加密 非对称加密 哈希算法 对称加密 特点：
+加密过程每一步可逆 加密/解密用同一组密钥 异或是最简单的对称加密算法 异或运算：按位异或运算符 ^ 是双目运算符。其功能是参与运算的两数各对应的二进位相异或，当两对应的二进位相异时，结果为 1。
+如：
+var a, key = 2, 1 var b = a ^ key fmt.Printf(&amp;#34;a: %b, key: %b, b: %b\n&amp;#34;, a, key, b) // a: 10, key: 01, b: 11 DES 数据加密标准 DES（Data Encryption Standard）数据加密标准，是目前最为流行的加密算法之一，密钥是 64 位。
+对原始数据（明文）进行分组，每组 64 位，最后一组不足 64 位时，按一定规则补充 对每组进行 DES 运算 AES 加密方式 AES（Advanced Encryption Standard）高级加密标准，旨在取代 DES。
+非对称加密 特点：
+使用公钥加密，使用私钥解密 公钥和私钥不同 公钥可以公布给所有人 私钥只有自己保存 相比于对称加密，运算速度非常慢 RSA 加密方式 RSA 三个字母取自三个创始人名字。</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>构建工具 on Hoi !</title>
+    <link>http://localhost:1313/blog/categories/%E6%9E%84%E5%BB%BA%E5%B7%A5%E5%85%B7/</link>
+    <description>Recent content in 构建工具 on Hoi !</description>
+    <image>
+      <title>Hoi !</title>
+      <url>http://localhost:1313/blog/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>http://localhost:1313/blog/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- 0.128.1</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 20 Nov 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/blog/categories/%E6%9E%84%E5%BB%BA%E5%B7%A5%E5%85%B7/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Makefile 入门</title>
+      <link>http://localhost:1313/blog/posts/backend/makefile-%E5%85%A5%E9%97%A8/</link>
+      <pubDate>Mon, 20 Nov 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/posts/backend/makefile-%E5%85%A5%E9%97%A8/</guid>
+      <description>基本语法 声明变量：xxx=xxx
+声明命令：xxx:
+不输出：前面加个 @
+示例 VERSION=0.0.1 install: ## 安装依赖 go mod tidy installSlient: ## 安装依赖，不输出 @go mod tidy list: ## 显示全部依赖 go list -m all local-list: ## 显示本地依赖 go list cmdb/... ver: ## 打印版本 echo $(VERSION) 常用技巧 使用 ## 添加注释 使用 $(变量名) 引用变量 使用 @ 静音执行命令 </description>
+    </item>
+  </channel>
+</rss>

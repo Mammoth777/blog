@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>解决方案 on Hoi !</title>
+    <link>http://localhost:1313/blog/categories/%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</link>
+    <description>Recent content in 解决方案 on Hoi !</description>
+    <image>
+      <title>Hoi !</title>
+      <url>http://localhost:1313/blog/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>http://localhost:1313/blog/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- 0.128.1</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 25 Feb 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/blog/categories/%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>免费建站方案</title>
+      <link>http://localhost:1313/blog/posts/solutions/%E5%85%8D%E8%B4%B9%E5%BB%BA%E7%AB%99%E6%96%B9%E6%A1%88/</link>
+      <pubDate>Wed, 25 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/posts/solutions/%E5%85%8D%E8%B4%B9%E5%BB%BA%E7%AB%99%E6%96%B9%E6%A1%88/</guid>
+      <description>全免费建站方案 Next.js 开发 SSG 网站，便于 SEO 基于 Vercel 做自动构建和部署 通过 Notion API 连接 Notion 做新闻/动态信息发布 配置自定义域名 </description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>运维 on Hoi !</title>
+    <link>http://localhost:1313/blog/categories/%E8%BF%90%E7%BB%B4/</link>
+    <description>Recent content in 运维 on Hoi !</description>
+    <image>
+      <title>Hoi !</title>
+      <url>http://localhost:1313/blog/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>http://localhost:1313/blog/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- 0.128.1</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 17 Dec 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/blog/categories/%E8%BF%90%E7%BB%B4/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Git 提交规范</title>
+      <link>http://localhost:1313/blog/posts/devops/git-%E6%8F%90%E4%BA%A4%E8%A7%84%E8%8C%83/</link>
+      <pubDate>Tue, 17 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/posts/devops/git-%E6%8F%90%E4%BA%A4%E8%A7%84%E8%8C%83/</guid>
+      <description> Type Description feat 修补代码库中的错误（与语义化版本控制中的 PATCH 相对应） fix 向代码库中引入新功能（与语义化版本控制中的 MINOR 相对应) build 构建系统或外部依赖项的更改 chore 对代码库或测试的辅助更改 ci 对 CI 配置文件或脚本的更改 docs 对文档的更改 perf 与性能有关的更改 refactor 代码重构，既不修复错误也不添加功能 revert 撤消先前的提交 style 与代码样式有关的更改 test 对测试的更改 </description>
+    </item>
+    <item>
+      <title>Cron 定时任务详解</title>
+      <link>http://localhost:1313/blog/posts/backend/cron-%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A1%E8%AF%A6%E8%A7%A3/</link>
+      <pubDate>Sat, 11 May 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/posts/backend/cron-%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A1%E8%AF%A6%E8%A7%A3/</guid>
+      <description>Cron 表达式格式 * * * * * * - - - - - - | | | | | | | | | | | +----- day of week (0 - 6) (Sunday=0 or 7) | | | | +------- month (1 - 12) | | | +--------- day of month (1 - 31) | | +----------- hour (0 - 23) | +------------- minute (0 - 59) +--------------- second (0 - 59) 字段说明 位置 字段 范围 1 秒 0 - 59 2 分 0 - 59 3 时 0 - 23 4 日 1 - 31 5 月 1 - 12 或 JAN-DEC 6 星期 0 - 6 或 SUN-SAT（0 和 7 都代表星期天） 7 年（可选） 留空或 1970 - 2099 特殊字符 字符 说明 * 表示任何时间，或者任何值 - 表示一个范围 , 表示一个列表中的值或值范围的分隔符 / 表示起始时间开始触发，然后每隔固定时间触发一次 示例 表达式 说明 0 0 12 * * 每天的中午 12 点触发 15 10 * * * 每天的上午 10 点 15 触发 0 0/5 14 * * 每天的 14 点开始，每 5 分钟触发一次，直到 14:55 0 0 1,15 * * 每月的 1 日和 15 日的午夜 12 点触发 0 0 1 * * sun 每个星期天的午夜 12 点触发 Cron 表达式非常灵活，可以用来创建各种复杂的时间调度规则。</description>
+    </item>
+    <item>
+      <title>Docker 国内镜像源</title>
+      <link>http://localhost:1313/blog/posts/devops/docker-%E5%9B%BD%E5%86%85%E9%95%9C%E5%83%8F%E6%BA%90/</link>
+      <pubDate>Mon, 20 Nov 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/posts/devops/docker-%E5%9B%BD%E5%86%85%E9%95%9C%E5%83%8F%E6%BA%90/</guid>
+      <description>国内 Docker 镜像源 # 这个源好用 docker.m.daocloud.io 使用方法 在拉取镜像时替换默认的 Docker Hub 地址：
+# 原始方式 docker pull nginx # 使用镜像源 docker pull docker.m.daocloud.io/nginx 配置 Docker 守护进程 编辑 /etc/docker/daemon.json（Linux）或 Docker Desktop 设置（Mac/Windows）：
+{ &amp;#34;registry-mirrors&amp;#34;: [ &amp;#34;https://docker.m.daocloud.io&amp;#34; ] } 重启 Docker 服务：
+sudo systemctl restart docker </description>
+    </item>
+    <item>
+      <title>Git 踩坑记录</title>
+      <link>http://localhost:1313/blog/posts/troubleshooting/git-%E5%92%8C%E6%B5%8F%E8%A7%88%E5%99%A8%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/</link>
+      <pubDate>Mon, 20 Nov 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/posts/troubleshooting/git-%E5%92%8C%E6%B5%8F%E8%A7%88%E5%99%A8%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/</guid>
+      <description>问题：修改文件名大小写，Git 不敏感 问题描述 当修改项目某文件名的大小写时，git status 是不会查看到此文件有改动的。
+解决方案 使用 git mv 命令进行两次重命名：
+git mv foldername tempname &amp;amp;&amp;amp; git mv tempname FolderName 参考 CSDN: Git 修改文件名大小写 问题：Chrome 访问非受信证书页面提示错误 问题描述 访问非受信证书页面时，提示「您的连接不是私密连接」错误。
+解决方案 在当前页面直接键盘输入：
+thisisunsafe 打完立刻就好了。
+参考 腾讯云开发者社区 问题：Mac 浏览器连接已重置 问题描述 Mac 上浏览器访问某些网站时提示连接已重置。
+解决方案 刷新 DNS 缓存：
+sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder 问题：node 版本管理工具 n 下载 node 慢 问题描述 使用 n 工具安装 node 版本时，下载速度很慢。
+解决方案 切换镜像源，并设置环境变量：
+# 设置环境变量 export N_NODE_MIRROR=https://npm.taobao.org/mirrors/node # 安装 sudo -E n stable 参考 墨天轮社区 问题：内容相同，MD5 竟然不一样 问题描述 两个文件内容完全相同，但计算出的 MD5 值却不一样。</description>
+    </item>
+  </channel>
+</rss>

@@ -4,39 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "557b162c2c9980cd",
+        "id": "653bc38abd85dc09",
         "type": "tabs",
         "children": [
           {
-            "id": "975a7c9a29a99616",
+            "id": "735dc3c137803d9a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "posts/server/mysql.md",
+                "file": "posts/frontend/Mapbox GL 图层分类详解/index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "mysql"
-            }
-          },
-          {
-            "id": "29430855162b64cb",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "未命名.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "未命名"
+              "title": "index"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -93,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 258.5
+    "width": 565.5
   },
   "right": {
     "id": "ff6ab05c8d2e6855",
@@ -109,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "未命名.md",
+                "file": "posts/frontend/Mapbox GL 图层分类详解/index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "未命名 的反向链接列表"
+              "title": "index 的反向链接列表"
             }
           },
           {
@@ -128,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "未命名.md",
+                "file": "posts/frontend/Mapbox GL 图层分类详解/index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "未命名 的出链列表"
+              "title": "index 的出链列表"
             }
           },
           {
@@ -171,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "未命名.md",
+                "file": "posts/frontend/Mapbox GL 图层分类详解/index.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "未命名 的大纲"
+              "title": "index 的大纲"
             }
           }
         ]
@@ -199,35 +184,53 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "29430855162b64cb",
+  "active": "735dc3c137803d9a",
   "lastOpenFiles": [
-    "posts/server/mysql.md",
-    "未命名.md",
-    "tempates/hugo-new-file-template.md",
-    "posts/general/在Obsidian中编辑博客.md",
-    "posts/general/一个免费博客方案.md",
-    "posts/server/redis.md",
-    "posts/server/rabbitmq.md",
-    "posts/server/docker.md",
-    "posts/server/minio.md",
-    "posts/server/nas.md",
-    "posts/server/未命名",
     "posts/frontend/基于svelte的浏览器插件方案/index.md",
-    "posts/frontend/基于svelte的浏览器插件方案/fe-frameworks.png",
-    "posts/general/idx.md",
-    "posts/memos/idx.md",
-    "posts/memos/test.md",
-    "posts/memos/VeinSight.md",
-    "archives.md",
-    "未命名 4.md",
-    "未命名 3.md",
-    "未命名 1.md",
-    "未命名 2.md",
-    "posts/general/未命名.md",
-    "未命名.base",
-    "tempates",
-    "posts/bb/未命名.md",
+    "posts/ai/MCP 协议入门/index.md",
+    "posts/ai/MCP 协议入门/pics/MCP 使用流程理解.excalidraw.png",
+    "posts/ai/MCP 协议入门/pics",
+    "posts/ai/MCP 协议入门",
+    "posts/frontend/Mapbox GL 图层分类详解/index.md",
+    "posts/frontend/Mapbox GL 图层分类详解/pics/mapboxgl.png",
+    "posts/frontend/Mapbox GL 图层分类详解/pics",
+    "posts/frontend/Mapbox GL 图层分类详解",
     "posts/frontend/eventLoop/index.md",
-    "about/index.md"
+    "posts/frontend/Mapbox GL 图层分类详解.md",
+    "posts/frontend/pics/mapboxgl.png",
+    "posts/ai/pics/MCP 使用流程理解.excalidraw.png",
+    "posts/ai/pics",
+    "posts/frontend/pics",
+    "assets/mapboxgl/mapboxgl.md",
+    "assets/mapboxgl",
+    "assets",
+    "posts/ai/assets/mcp/MCP 使用流程理解.excalidraw.png",
+    "posts/ai/Opencode AI 助手使用指南.md",
+    "posts/ai/Mac 深度学习环境 MPS.md",
+    "posts/ai/问答对话模型基础.md",
+    "posts/ai/深度学习训练指标详解.md",
+    "posts/ai/本地知识库搭建指南.md",
+    "tempates/hugo-new-file-template.md",
+    "posts/hardware/绿联 NAS 使用心得.md",
+    "posts/devops/Docker 国内镜像源.md",
+    "posts/backend/TCP-IP 四层模型详解.md",
+    "posts/backend/加密算法入门.md",
+    "posts/backend/cron 定时任务详解.md",
+    "posts/backend/Makefile 入门.md",
+    "posts/backend/SQL 基础教程.md",
+    "posts/troubleshooting/Git 和浏览器踩坑记录.md",
+    "posts/frontend/RxJS 响应式编程入门.md",
+    "posts/ai/MCP 协议入门.md",
+    "posts/frontend/assets/mapboxgl/mapboxgl理解.excalidraw.png",
+    "posts/frontend/assets/mapboxgl理解.excalidraw.png",
+    "posts/frontend/assets/MCP 使用流程理解.excalidraw.png",
+    "posts/ai/assets/mcp",
+    "posts/ai/assets",
+    "MCP 使用流程理解.excalidraw.png",
+    "mapboxgl理解.excalidraw.png",
+    "posts/frontend/Angular通过npm_link本地调试的问题.md",
+    "posts/frontend/jsconfig是什么.md",
+    "posts/solutions/memos/test.md",
+    "posts/solutions/memos/idx.md"
   ]
 }

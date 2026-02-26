@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>工具 on Hoi !</title>
+    <link>http://localhost:1313/blog/categories/%E5%B7%A5%E5%85%B7/</link>
+    <description>Recent content in 工具 on Hoi !</description>
+    <image>
+      <title>Hoi !</title>
+      <url>http://localhost:1313/blog/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>http://localhost:1313/blog/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- 0.128.1</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 26 Jan 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/blog/categories/%E5%B7%A5%E5%85%B7/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Opencode AI 助手使用指南</title>
+      <link>http://localhost:1313/blog/posts/ai/opencode-ai-%E5%8A%A9%E6%89%8B%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/</link>
+      <pubDate>Mon, 26 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/posts/ai/opencode-ai-%E5%8A%A9%E6%89%8B%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/</guid>
+      <description>我的基础环境：
+Mac mini 安装步骤 安装 ghostty: opencode 本身设计的文字颜色在深色背景下更好看 安装 opencode 在工作目录配置 opencode.jsonc, 示例如下： { &amp;#34;$schema&amp;#34;: &amp;#34;https://opencode.ai/config.json&amp;#34;, &amp;#34;provider&amp;#34;: { &amp;#34;bailian&amp;#34;: { &amp;#34;name&amp;#34;: &amp;#34;bailian&amp;#34;, &amp;#34;options&amp;#34;: { &amp;#34;baseURL&amp;#34;: &amp;#34;https://dashscope.aliyuncs.com/compatible-mode/v1&amp;#34; }, &amp;#34;models&amp;#34;: { &amp;#34;qwen-flash&amp;#34;: {}, &amp;#34;deepseek-v3.2&amp;#34;: {} } } }, &amp;#34;autoupdate&amp;#34;: true } 打开 ghostty, 输入 opencode, 进入工具 输入 /connect，选择上面我们配置的百炼入口和模型 愉快玩耍 </description>
+    </item>
+    <item>
+      <title>MCP 协议入门</title>
+      <link>http://localhost:1313/blog/posts/ai/mcp-%E5%8D%8F%E8%AE%AE%E5%85%A5%E9%97%A8/</link>
+      <pubDate>Tue, 20 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/posts/ai/mcp-%E5%8D%8F%E8%AE%AE%E5%85%A5%E9%97%A8/</guid>
+      <description>![MCP 使用流程](pics/MCP 使用流程理解.excalidraw.png)
+重要参考：MCP 中文入门指南
+什么是 MCP MCP（Model Context Protocol）是一种用于 AI 模型与外部工具/数据源通信的协议标准。
+调试 MCP Server 使用官方提供的 inspector 工具调试 MCP server：
+npx -y @modelcontextprotocol/inspector &amp;lt;command&amp;gt; &amp;lt;arg1&amp;gt; &amp;lt;arg2&amp;gt; 使用场景 连接 AI 助手到本地文件系统 访问数据库 调用外部 API 执行命令行工具 </description>
+    </item>
+    <item>
+      <title>本地知识库搭建指南</title>
+      <link>http://localhost:1313/blog/posts/ai/%E6%9C%AC%E5%9C%B0%E7%9F%A5%E8%AF%86%E5%BA%93%E6%90%AD%E5%BB%BA%E6%8C%87%E5%8D%97/</link>
+      <pubDate>Mon, 24 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/posts/ai/%E6%9C%AC%E5%9C%B0%E7%9F%A5%E8%AF%86%E5%BA%93%E6%90%AD%E5%BB%BA%E6%8C%87%E5%8D%97/</guid>
+      <description>非常简单的知识库搭建方法，只要有 Docker 就行。
+参考：Open WebUI 文档
+快速创建本地知识库问答 1. 启动 Open WebUI 官网指定命令：
+docker run -d -p 3000:8080 -v open-webui:/app/backend/data --name open-webui ghcr.io/open-webui/open-webui:main 实际使用的命令（推荐）：
+docker run -d -p 3000:8080 --add-host=host.docker.internal:host-gateway -v open-webui:/app/backend/data --name open-webui --restart always ghcr.io/open-webui/open-webui:main 启动后，通过 http://localhost:3000 访问 Open WebUI。
+2. 注册登录 没啥说的，注册登录即可。
+3. 配置模型 新建一个工作空间 点击工作空间，可看到模型的配置界面。点击右侧加号，可增加一个模型 选择一个基础模型 选择一个知识库 点击最下面的保存并更新 至此，配置完毕。
+3.1 配置基础模型 配置路径：
+点击左下角管理员头像 → 显示设置弹框 点击管理员设置 → 进入管理员设置界面 点击外部连接 点击管理 OpenAI API 连接 我这里配置的是硅基流动的 api：
+URL: https://api.siliconflow.cn/v1 密钥：在硅基流动管理界面可获得 模型 ID: 即模型名称，复制进输入框，点击加号即可 或者是阿里云的 api，我感觉这个更好用：</description>
+    </item>
+  </channel>
+</rss>

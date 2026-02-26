@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Mac on Hoi !</title>
+    <link>http://localhost:1313/blog/categories/mac/</link>
+    <description>Recent content in Mac on Hoi !</description>
+    <image>
+      <title>Hoi !</title>
+      <url>http://localhost:1313/blog/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>http://localhost:1313/blog/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- 0.128.1</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 10 Feb 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/blog/categories/mac/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mac 深度学习环境 MPS</title>
+      <link>http://localhost:1313/blog/posts/ai/mac-%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%8E%AF%E5%A2%83-mps/</link>
+      <pubDate>Tue, 10 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/posts/ai/mac-%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%8E%AF%E5%A2%83-mps/</guid>
+      <description>MPS（Metal Performance Shaders） MPS 是 Apple 的 GPU 加速框架，全称 Metal Performance Shaders。
+这是 Apple 专为 macOS 和 iOS 设计的 GPU 计算框架，让 Mac 用户能够利用 Apple Silicon（M1/M2/M3/M4）或 AMD GPU 进行深度学习训练和推理。
+使用场景 深度学习模型训练 模型推理 GPU 加速计算 优势 利用 Apple Silicon 的 GPU 性能 原生支持 macOS 相比 CPU 训练有显著提升 </description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>数据库 on Hoi !</title>
+    <link>http://localhost:1313/blog/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/</link>
+    <description>Recent content in 数据库 on Hoi !</description>
+    <image>
+      <title>Hoi !</title>
+      <url>http://localhost:1313/blog/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>http://localhost:1313/blog/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- 0.128.1</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 26 Feb 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/blog/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SQL 基础教程</title>
+      <link>http://localhost:1313/blog/posts/backend/sql%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/</link>
+      <pubDate>Thu, 26 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/posts/backend/sql%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/</guid>
+      <description>主键原则 不使用业务相关的数据作为主键 没有必要的情况下，我们尽量不使用联合主键，因为它给关系表带来了复杂度的上升 外键原则 不用外键约束，用程序逻辑做外键关联 关系 一对多 class 表
+id name 1 class1 2 class2 student 表
+id name class_id 1 zhangsan 1 2 lisi 2 3 wangwu 2 多对多 class 表
+id name 1 class1 2 class2 teacher 表
+id name 1 teacher-Wang 2 teacher-Zhang 3 teacher-Li class_student 表
+id class_id teacher_id 1 1 1 2 1 2 3 2 1 4 2 3 一对一 也可以用一张大表 拆成两张表，可以把不经常查的内容区分开来 索引 定义 索引是关系数据库中对某一列或多个列的值进行预排序的数据结构。</description>
+    </item>
+  </channel>
+</rss>

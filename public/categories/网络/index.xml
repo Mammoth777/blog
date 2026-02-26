@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>网络 on Hoi !</title>
+    <link>http://localhost:1313/blog/categories/%E7%BD%91%E7%BB%9C/</link>
+    <description>Recent content in 网络 on Hoi !</description>
+    <image>
+      <title>Hoi !</title>
+      <url>http://localhost:1313/blog/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>http://localhost:1313/blog/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- 0.128.1</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 07 Jul 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/blog/categories/%E7%BD%91%E7%BB%9C/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TCP/IP 四层模型详解</title>
+      <link>http://localhost:1313/blog/posts/backend/tcp-ip-%E5%9B%9B%E5%B1%82%E6%A8%A1%E5%9E%8B%E8%AF%A6%E8%A7%A3/</link>
+      <pubDate>Mon, 07 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/posts/backend/tcp-ip-%E5%9B%9B%E5%B1%82%E6%A8%A1%E5%9E%8B%E8%AF%A6%E8%A7%A3/</guid>
+      <description>TCP/IP 模型是互联网的基础协议模型，它将网络通信分为四个层次，每个层次负责特定的功能。从下到上依次为：
+1. 链路层（Link Layer） 功能：负责在物理介质上传输数据帧。
+任务：与 OSI 模型中的物理层和数据链路层相对应，负责将数据封装成帧，并进行错误检测和纠正。
+示例：以太网、无线局域网。
+常用命令 命令 用途 示例 ifconfig 或 ip 查看和配置网络接口 ifconfig 或 ip addr show arp 查看和管理 ARP 表 arp -a ethtool 查看和设置以太网设备参数 ethtool eth0 2. 网络层（Internet Layer） 功能：负责将数据包从源节点传输到目标节点。
+任务：提供逻辑地址（如 IP 地址），实现数据包的分段和重组。
+示例：IP 协议。
+常用命令 命令 用途 示例 ping 测试主机之间的连通性 ping 8.8.8.8 traceroute 或 tracepath 显示数据包到达目标主机的路径 traceroute 8.8.8.8 route 或 netstat -r 查看和管理路由表 route -n 或 netstat -nr 3. 传输层（Transport Layer） 功能：负责端到端的可靠数据传输。</description>
+    </item>
+  </channel>
+</rss>
