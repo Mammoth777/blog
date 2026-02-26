@@ -13,30 +13,15 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "posts/server/mysql.md",
+                "file": "posts/server/docker.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "mysql"
-            }
-          },
-          {
-            "id": "c813ad56eeb8dcbf",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "posts/server/redis.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "redis"
+              "title": "docker"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -109,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "posts/server/redis.md",
+                "file": "posts/server/docker.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "redis 的反向链接列表"
+              "title": "docker 的反向链接列表"
             }
           },
           {
@@ -128,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "posts/server/redis.md",
+                "file": "posts/server/docker.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "redis 的出链列表"
+              "title": "docker 的出链列表"
             }
           },
           {
@@ -171,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "posts/server/redis.md",
+                "file": "posts/server/docker.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "redis 的大纲"
+              "title": "docker 的大纲"
             }
           }
         ]
@@ -199,24 +184,29 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "c813ad56eeb8dcbf",
+  "active": "975a7c9a29a99616",
   "lastOpenFiles": [
-    "posts/server/rabbitmq.md",
     "posts/server/redis.md",
+    "posts/server/rabbitmq.md",
     "posts/server/mysql.md",
-    "posts/server/docker.md",
     "posts/server/minio.md",
+    "posts/memos/test.md",
+    "posts/memos/idx.md",
+    "posts/memos/VeinSight.md",
+    "posts/memos",
+    "未命名.md",
+    "posts/bb/test.md",
+    "posts/bb/idx.md",
+    "posts/bb",
     "tempates/hugo-new-file-template.md",
     "posts/general/在Obsidian中编辑博客.md",
     "posts/general/一个免费博客方案.md",
+    "posts/server/docker.md",
     "posts/server/nas.md",
     "posts/server/未命名",
     "posts/frontend/基于svelte的浏览器插件方案/index.md",
     "posts/frontend/基于svelte的浏览器插件方案/fe-frameworks.png",
     "posts/general/idx.md",
-    "posts/memos/idx.md",
-    "posts/memos/test.md",
-    "posts/memos/VeinSight.md",
     "archives.md",
     "未命名 4.md",
     "未命名 3.md",
@@ -226,7 +216,6 @@
     "未命名.base",
     "tempates",
     "posts/bb/未命名.md",
-    "posts/frontend/eventLoop/index.md",
-    "about/index.md"
+    "posts/frontend/eventLoop/index.md"
   ]
 }
