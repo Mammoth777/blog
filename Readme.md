@@ -1,6 +1,6 @@
 # todo
 
-- ~~https://mammoth777.github.io/blog/~~
+- ~~https://jachy-h.github.io/blog/~~
 
 - 在这里看👉: **https://jinyu.cool/**
 
