@@ -29,3 +29,7 @@ draft: false
 git checkout -b obsidian-branch
 git push --set-upstream origin obsidian-branch
 ```
+
+
+
+在`github` 中 通过 pull request 手动触发构建
