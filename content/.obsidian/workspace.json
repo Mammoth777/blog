@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 565.5
+    "width": 356.5
   },
   "right": {
     "id": "ff6ab05c8d2e6855",
@@ -184,9 +184,8 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "735dc3c137803d9a",
+  "active": "09135af0788021fe",
   "lastOpenFiles": [
-    "posts/hardware/绿联 NAS 使用心得.md",
     "posts/server/redis.md",
     "posts/server/rabbitmq.md",
     "posts/server/nas.md",
@@ -207,19 +206,20 @@
     "posts/general/idx.md",
     "posts/general",
     "posts/Angular通过npm_link本地调试的问题.md",
-    "posts/frontend/基于svelte的浏览器插件方案/index.md",
-    "posts/hardware/NAS 存储搭建指南.md",
     "posts/troubleshooting/Git 和浏览器踩坑记录.md",
     "posts/troubleshooting",
-    "posts/solutions/memos/test.md",
     "posts/solutions/memos/idx.md",
+    "posts/solutions/memos/test.md",
     "posts/solutions/memos/VeinSight.md",
     "posts/solutions/免费建站方案.md",
     "posts/solutions/memos",
     "posts/solutions",
+    "posts/hardware/绿联 NAS 使用心得.md",
+    "posts/hardware/NAS 存储搭建指南.md",
     "posts/hardware",
     "posts/frontend/坐标系整理.md",
     "posts/frontend/jsconfig是什么.md",
+    "posts/frontend/RxJS 响应式编程入门.md",
     "posts/frontend/Mapbox GL 图层分类详解/pics/mapboxgl.png",
     "posts/frontend/Mapbox GL 图层分类详解/pics",
     "posts/frontend/Mapbox GL 图层分类详解",
