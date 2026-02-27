@@ -11,14 +11,10 @@
             "id": "735dc3c137803d9a",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "posts/frontend/基于svelte的浏览器插件方案/index.md",
-                "mode": "source",
-                "source": true
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "index"
+              "title": "新标签页"
             }
           }
         ]
@@ -94,7 +90,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "posts/frontend/基于svelte的浏览器插件方案/index.md",
+                "file": "archives.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +100,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "index 的反向链接列表"
+              "title": "archives 的反向链接列表"
             }
           },
           {
@@ -113,12 +109,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "posts/frontend/基于svelte的浏览器插件方案/index.md",
+                "file": "archives.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "index 的出链列表"
+              "title": "archives 的出链列表"
             }
           },
           {
@@ -156,13 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "posts/frontend/基于svelte的浏览器插件方案/index.md",
+                "file": "archives.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "index 的大纲"
+              "title": "archives 的大纲"
             }
           }
         ]
@@ -184,17 +180,26 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "09135af0788021fe",
+  "active": "735dc3c137803d9a",
   "lastOpenFiles": [
+    "posts/solutions/My Agent Team.md",
+    "未命名.md",
+    "posts/custom/2048.html",
+    "posts/custom",
+    "posts/solutions/免费服务羊毛.md",
+    "posts/solutions/AI 时代的电脑软件套装.md",
+    "posts/solutions/免费建站方案.md",
+    "archives.md",
+    "search/index.md",
+    "posts/hardware/绿联 NAS 使用心得.md",
+    "posts/frontend/基于svelte的浏览器插件方案/index.md",
     "posts/troubleshooting/Git 和浏览器踩坑记录.md",
     "posts/troubleshooting",
     "posts/solutions/memos/test.md",
     "posts/solutions/memos/idx.md",
     "posts/solutions/memos/VeinSight.md",
-    "posts/solutions/免费建站方案.md",
     "posts/solutions/memos",
     "posts/solutions",
-    "posts/hardware/绿联 NAS 使用心得.md",
     "posts/hardware/NAS 存储搭建指南.md",
     "posts/hardware",
     "posts/frontend/坐标系整理.md",
@@ -214,15 +219,6 @@
     "posts/devops/Git 提交规范.md",
     "posts/devops/Docker 国内镜像源.md",
     "posts/devops",
-    "posts/backend/golang/grpc-go.md",
-    "posts/backend/加密算法入门.md",
-    "posts/backend/redis.md",
-    "posts/backend/rabbitmq.md",
-    "posts/backend/mysql.md",
-    "posts/backend/minio.md",
-    "posts/backend/golang",
-    "posts/backend/docker.md",
-    "posts/backend",
     "posts/ai/MCP 协议入门/pics/MCP 使用流程理解.excalidraw.png",
     "posts/frontend/pics/mapboxgl.png",
     "posts/ai/pics/MCP 使用流程理解.excalidraw.png",

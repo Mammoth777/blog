@@ -1,6 +1,9 @@
 # Hugo build output
 public/
 
+# local workspace config
+content/.obsidian/workspace.json
+
 # OS files
 .DS_Store
 Thumbs.db
