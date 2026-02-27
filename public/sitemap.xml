@@ -65,6 +65,9 @@
     <loc>http://localhost:1313/blog/posts/frontend/eventloop/</loc>
     <lastmod>2024-01-12T11:15:14+08:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/blog/posts/server/redis/</loc>
+    <lastmod>2023-11-20T14:29:42+08:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/blog/posts/server/rabbitmq/</loc>
     <lastmod>2023-11-20T14:28:43+08:00</lastmod>
   </url><url>
@@ -100,6 +103,8 @@
   </url><url>
     <loc>http://localhost:1313/blog/posts/server/docker/</loc>
     <lastmod>2022-08-02T13:30:26+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blog/%E6%9C%AA%E5%91%BD%E5%90%8D/</loc>
   </url><url>
     <loc>http://localhost:1313/blog/tempates/hugo-new-file-template/</loc>
   </url><url>

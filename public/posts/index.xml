@@ -20,7 +20,7 @@
       <guid>http://localhost:1313/blog/posts/general/%E5%9C%A8obsidian%E4%B8%AD%E7%BC%96%E8%BE%91%E5%8D%9A%E5%AE%A2/</guid>
       <description>一个方便的博客编辑方案
 在完成 [[一个免费博客方案]] 后，我们已经有了一个基于 hugo 的博客。 现在我们要通过 obsidian 获得更好的编辑体验。
-创建一个新仓库，目录为 博客项目中的 content 目录 配置一个模板 &amp;ldquo;hugo-new-file-template&amp;rdquo;, 内容如下： --- title: &amp;#34;{{title}}&amp;#34; date: &amp;#34;{{date:YYYY-MM-DDThh:mm:ss+08:00}}&amp;#34; draft: false --- 新建文件， 使用模板 注意： 首次提交可能需要先创建分支, 避免使用 main 分支， 频繁触发构建。
+创建一个新仓库，目录为 博客项目中的 content 目录 配置一个模板 &amp;ldquo;hugo-new-file-template&amp;rdquo;, 内容如下： --- title: &amp;#34;{{title}}&amp;#34; subtitle: &amp;#34;&amp;#34; date: &amp;#34;{{date:YYYY-MM-DDTHH:mm:ss+08:00}}&amp;#34; categories: [] draft: false --- 新建文件， 使用模板 注意： 首次提交可能需要先创建分支, 避免使用 main 分支， 频繁触发构建。
 git checkout -b obsidian-branch git push --set-upstream origin obsidian-branch 在github 中 通过 pull request 手动触发构建</description>
     </item>
     <item>
@@ -106,6 +106,15 @@ winget install Hugo.Hugo.Extended (待验证)
 while (true) { if (execQueue.isNotEmpty()) { execQueue.pop().exec(); } } 在老的操作系统上， 这段代码会疯狂跑满全部cpu。 （真的吗？ &amp;ndash; 年轻的译者注） 现代操作系统调度器非常复杂， 包括优先级，执行队列， 和其他的技术。
 我们可以把事件循环理解为一个圆圈，系统就一圈一圈地检查， 有没有待执行的任务 （pending task）。 下面这些行为， 都会在事件循环里生成任务：
 script 标签 延迟任务： setTimeout, setInterval, requestIdleCallback 浏览器的事件处理API: click， mousedown, input, blur 等等。 有一些事件是用户初始化的，比如点击事件， tab切换这种 有的事件是来自于代码， 比如 ajax 的响应啥的 promise 状态变化； （关于promise， 可以看这个文章, emmm这篇文章是我准备留给2月份翻译的） DOMMutationObserver, IntersectionObserver 这种 Observer 家族的 RequestAnimationFrame Almost everything we described above is planned through WebAPI (or browserAPI).</description>
+    </item>
+    <item>
+      <title>redis</title>
+      <link>http://localhost:1313/blog/posts/server/redis/</link>
+      <pubDate>Mon, 20 Nov 2023 14:29:42 +0800</pubDate>
+      <guid>http://localhost:1313/blog/posts/server/redis/</guid>
+      <description>客户端启动 redis-cli
+redis-cli ping &amp;gt; PONG 远程: redis-cli -h host -p -a password
+Key相关 set key value del key dump key序列化, 返回被序列化的值 exists key expire key设置过期时间, 到期删除 `` </description>
     </item>
     <item>
       <title>rabbitmq</title>

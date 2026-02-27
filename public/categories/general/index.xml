@@ -20,7 +20,7 @@
       <guid>http://localhost:1313/blog/posts/general/%E5%9C%A8obsidian%E4%B8%AD%E7%BC%96%E8%BE%91%E5%8D%9A%E5%AE%A2/</guid>
       <description>一个方便的博客编辑方案
 在完成 [[一个免费博客方案]] 后，我们已经有了一个基于 hugo 的博客。 现在我们要通过 obsidian 获得更好的编辑体验。
-创建一个新仓库，目录为 博客项目中的 content 目录 配置一个模板 &amp;ldquo;hugo-new-file-template&amp;rdquo;, 内容如下： --- title: &amp;#34;{{title}}&amp;#34; date: &amp;#34;{{date:YYYY-MM-DDThh:mm:ss+08:00}}&amp;#34; draft: false --- 新建文件， 使用模板 注意： 首次提交可能需要先创建分支, 避免使用 main 分支， 频繁触发构建。
+创建一个新仓库，目录为 博客项目中的 content 目录 配置一个模板 &amp;ldquo;hugo-new-file-template&amp;rdquo;, 内容如下： --- title: &amp;#34;{{title}}&amp;#34; subtitle: &amp;#34;&amp;#34; date: &amp;#34;{{date:YYYY-MM-DDTHH:mm:ss+08:00}}&amp;#34; categories: [] draft: false --- 新建文件， 使用模板 注意： 首次提交可能需要先创建分支, 避免使用 main 分支， 频繁触发构建。
 git checkout -b obsidian-branch git push --set-upstream origin obsidian-branch 在github 中 通过 pull request 手动触发构建</description>
     </item>
     <item>

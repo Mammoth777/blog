@@ -20,7 +20,7 @@
       <guid>http://localhost:1313/blog/posts/general/%E5%9C%A8obsidian%E4%B8%AD%E7%BC%96%E8%BE%91%E5%8D%9A%E5%AE%A2/</guid>
       <description>一个方便的博客编辑方案
 在完成 [[一个免费博客方案]] 后，我们已经有了一个基于 hugo 的博客。 现在我们要通过 obsidian 获得更好的编辑体验。
-创建一个新仓库，目录为 博客项目中的 content 目录 配置一个模板 &amp;ldquo;hugo-new-file-template&amp;rdquo;, 内容如下： --- title: &amp;#34;{{title}}&amp;#34; date: &amp;#34;{{date:YYYY-MM-DDThh:mm:ss+08:00}}&amp;#34; draft: false --- 新建文件， 使用模板 注意： 首次提交可能需要先创建分支, 避免使用 main 分支， 频繁触发构建。
+创建一个新仓库，目录为 博客项目中的 content 目录 配置一个模板 &amp;ldquo;hugo-new-file-template&amp;rdquo;, 内容如下： --- title: &amp;#34;{{title}}&amp;#34; subtitle: &amp;#34;&amp;#34; date: &amp;#34;{{date:YYYY-MM-DDTHH:mm:ss+08:00}}&amp;#34; categories: [] draft: false --- 新建文件， 使用模板 注意： 首次提交可能需要先创建分支, 避免使用 main 分支， 频繁触发构建。
 git checkout -b obsidian-branch git push --set-upstream origin obsidian-branch 在github 中 通过 pull request 手动触发构建</description>
     </item>
     <item>
@@ -108,6 +108,15 @@ while (true) { if (execQueue.isNotEmpty()) { execQueue.pop().exec(); } } 在老�
 script 标签 延迟任务： setTimeout, setInterval, requestIdleCallback 浏览器的事件处理API: click， mousedown, input, blur 等等。 有一些事件是用户初始化的，比如点击事件， tab切换这种 有的事件是来自于代码， 比如 ajax 的响应啥的 promise 状态变化； （关于promise， 可以看这个文章, emmm这篇文章是我准备留给2月份翻译的） DOMMutationObserver, IntersectionObserver 这种 Observer 家族的 RequestAnimationFrame Almost everything we described above is planned through WebAPI (or browserAPI).</description>
     </item>
     <item>
+      <title>redis</title>
+      <link>http://localhost:1313/blog/posts/server/redis/</link>
+      <pubDate>Mon, 20 Nov 2023 14:29:42 +0800</pubDate>
+      <guid>http://localhost:1313/blog/posts/server/redis/</guid>
+      <description>客户端启动 redis-cli
+redis-cli ping &amp;gt; PONG 远程: redis-cli -h host -p -a password
+Key相关 set key value del key dump key序列化, 返回被序列化的值 exists key expire key设置过期时间, 到期删除 `` </description>
+    </item>
+    <item>
       <title>rabbitmq</title>
       <link>http://localhost:1313/blog/posts/server/rabbitmq/</link>
       <pubDate>Mon, 20 Nov 2023 14:28:43 +0800</pubDate>
@@ -192,6 +201,13 @@ go_out: 生成后的*.pb.go文件位置 go-grpc_out: 生成后的*_grpc.pb.go文
       <pubDate>Tue, 02 Aug 2022 13:30:26 +0800</pubDate>
       <guid>http://localhost:1313/blog/posts/server/docker/</guid>
       <description>docker</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/blog/%E6%9C%AA%E5%91%BD%E5%90%8D/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/%E6%9C%AA%E5%91%BD%E5%90%8D/</guid>
+      <description></description>
     </item>
     <item>
       <title>{{title}}</title>
