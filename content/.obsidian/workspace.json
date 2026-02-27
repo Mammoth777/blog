@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "posts/solutions/免费服务羊毛.md",
+                "file": "posts/solutions/My Agent Team.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "免费服务羊毛"
+              "title": "My Agent Team"
             }
           }
         ]
@@ -186,12 +186,13 @@
   },
   "active": "735dc3c137803d9a",
   "lastOpenFiles": [
-    "posts/solutions/免费建站方案.md",
     "posts/solutions/免费服务羊毛.md",
+    "posts/solutions/My Agent Team.md",
+    "posts/solutions/AI 时代的电脑软件套装.md",
+    "posts/solutions/免费建站方案.md",
     "archives.md",
     "search/index.md",
     "posts/hardware/绿联 NAS 使用心得.md",
-    "未命名.md",
     "posts/frontend/基于svelte的浏览器插件方案/index.md",
     "posts/troubleshooting/Git 和浏览器踩坑记录.md",
     "posts/troubleshooting",
@@ -220,7 +221,6 @@
     "posts/devops/Docker 国内镜像源.md",
     "posts/devops",
     "posts/backend/golang/grpc-go.md",
-    "posts/backend/加密算法入门.md",
     "posts/backend/golang",
     "posts/backend",
     "posts/ai/MCP 协议入门/pics/MCP 使用流程理解.excalidraw.png",
