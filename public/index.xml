@@ -417,13 +417,6 @@ go_out: 生成后的*.pb.go文件位置 go-grpc_out: 生成后的*_grpc.pb.go文
       <description></description>
     </item>
     <item>
-      <title></title>
-      <link>http://localhost:1313/blog/%E6%9C%AA%E5%91%BD%E5%90%8D/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/%E6%9C%AA%E5%91%BD%E5%90%8D/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>{{title}}</title>
       <link>http://localhost:1313/blog/tempates/hugo-new-file-template/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
