@@ -23,3 +23,19 @@ https://opencode.ai/zen
 ## openrouter
 
 对接很多模型， 但是用起来好慢， 暂时感觉有点问题
+
+
+## coding
+
+基于 `git worktree` 各自开辟 `feat/fix` 分支工作。 需要Git >= 2.5
+
+```
+# 1. 进入你希望新工作区所在的父目录
+cd /path/to/your_project
+
+# 2. 使用 git worktree add 创建新的工作区和分支
+git worktree add ../path/to/claw_agent/workspace/your_project new-feature
+
+# 3. 开发完成后合并回主分支
+git merge new-feature
+```
