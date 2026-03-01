@@ -8,7 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "735dc3c137803d9a",
+            "id": "34bffde9f4da2d25",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -180,14 +180,16 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "735dc3c137803d9a",
+  "active": "34bffde9f4da2d25",
   "lastOpenFiles": [
+    "posts/solutions/我在2026年3月初的开发工作流.md",
+    "posts/solutions/免费服务羊毛.md",
     "posts/solutions/My Agent Team.md",
+    "posts/solutions/AI 时代的电脑软件套装.md",
+    "posts/custom/haha-jianpu.html",
     "未命名.md",
     "posts/custom/2048.html",
     "posts/custom",
-    "posts/solutions/免费服务羊毛.md",
-    "posts/solutions/AI 时代的电脑软件套装.md",
     "posts/solutions/免费建站方案.md",
     "archives.md",
     "search/index.md",
@@ -216,9 +218,6 @@
     "posts/devops/general/一个免费博客方案.md",
     "posts/devops/general/idx.md",
     "posts/devops/general",
-    "posts/devops/Git 提交规范.md",
-    "posts/devops/Docker 国内镜像源.md",
-    "posts/devops",
     "posts/ai/MCP 协议入门/pics/MCP 使用流程理解.excalidraw.png",
     "posts/frontend/pics/mapboxgl.png",
     "posts/ai/pics/MCP 使用流程理解.excalidraw.png",
